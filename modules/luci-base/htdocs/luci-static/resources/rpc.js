@@ -454,7 +454,7 @@ return baseclass.extend(/** @lends LuCI.rpc.prototype */ {
 	 * Registers a new interceptor function.
 	 *
 	 * @param {LuCI.rpc~interceptorFn} interceptorFn
-	 * The inteceptor function to register.
+	 * The interceptor function to register.
 	 *
 	 * @returns {LuCI.rpc~interceptorFn}
 	 * Returns the given function value.
@@ -469,7 +469,7 @@ return baseclass.extend(/** @lends LuCI.rpc.prototype */ {
 	 * Removes a registered interceptor function.
 	 *
 	 * @param {LuCI.rpc~interceptorFn} interceptorFn
-	 * The inteceptor function to remove.
+	 * The interceptor function to remove.
 	 *
 	 * @returns {boolean}
 	 * Returns `true` if the given function has been removed or `false`
