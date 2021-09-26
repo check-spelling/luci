@@ -198,7 +198,7 @@ o.default = 5
 
 
 o = s:taboption("limits", Value, "MaxRequestsPerChild", translate("Max. requests per server"),
-	translate("Maximum allowed number of requests per process. If it is exeeded, the process is restarted. Zero means unlimited."))
+	translate("Maximum allowed number of requests per process. If it is exceeded, the process is restarted. Zero means unlimited."))
 
 o.datatype = "uinteger"
 o.default = 0

@@ -190,7 +190,7 @@ msgstr ""
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:201
 msgid ""
-"Maximum allowed number of requests per process. If it is exeeded, the "
+"Maximum allowed number of requests per process. If it is exceeded, the "
 "process is restarted. Zero means unlimited."
 msgstr ""
 
