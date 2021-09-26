@@ -313,7 +313,7 @@ static int gen_tbs_cert(const char * dn[],
     gen_serial_number(buf, offset);
     gen_signature_alg(buf, offset);
 
-    /* CA certicate issuer */
+    /* CA certificate issuer */
     if ((ret = gen_issuer(dn, buf, offset)))
         goto error;
 
