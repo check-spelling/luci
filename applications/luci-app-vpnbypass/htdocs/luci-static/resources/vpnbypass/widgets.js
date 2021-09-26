@@ -1,4 +1,4 @@
-// Thsis file wouldn't have been possible without help from [@vsviridov](https://github.com/vsviridov)
+// This file wouldn't have been possible without help from [@vsviridov](https://github.com/vsviridov)
 
 'require ui';
 'require rpc';
