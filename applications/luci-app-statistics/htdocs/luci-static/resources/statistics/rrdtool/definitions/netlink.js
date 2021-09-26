@@ -162,7 +162,7 @@ return baseclass.extend({
 					if_collisions: {
 						title: "Collisions",
 						total: true,		/* report total amount of packets */
-						color: "ff0000"	/* collsions are red */
+						color: "ff0000"	/* collisions are red */
 					}
 				}
 			}
