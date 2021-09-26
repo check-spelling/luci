@@ -1,4 +1,4 @@
---- Bitfield operators and mainpulation functions.
+--- Bitfield operators and manipulation functions.
 -- Can be used as a drop-in replacement for bitlib.
 module "nixio.bit"
 
