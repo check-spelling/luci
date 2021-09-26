@@ -314,7 +314,7 @@ Get the configuration directory.
 ]]
 
 ---[[
-Get the directory for uncomitted changes.
+Get the directory for uncommitted changes.
 
 @class				function
 @name				Cursor.get_savedir
