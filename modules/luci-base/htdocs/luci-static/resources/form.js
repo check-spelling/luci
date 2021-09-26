@@ -2832,7 +2832,7 @@ var CBITableSection = CBITypedSection.extend(/** @lends LuCI.form.TableSection.p
 	 * @returns {*|Promise<*>}
 	 * Return values of this function are ignored but if a promise is returned,
 	 * it is run to completion before the rendering is continued, allowing
-	 * custom logic to perform asynchroneous work before the modal dialog
+	 * custom logic to perform asynchronous work before the modal dialog
 	 * is shown.
 	 */
 	addModalOptions: function(modalSection, section_id, ev) {
