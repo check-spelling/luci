@@ -366,7 +366,7 @@ static void addcgiext(const char *cgi_exts)
 {
     char *cp = strdup(cgi_exts);
 
-    /* extenstions are comma separated */
+    /* extensions are comma separated */
     do 
     {
         struct cgiextstruct *ex = (struct cgiextstruct *)
