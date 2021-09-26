@@ -142,7 +142,7 @@ Menu structure
 --------------
 
 The position of a menu entry in the tree is determined in two ways. First
-it can be specified explicitely:
+it can be specified explicitly:
 
 menu "Network device support"
 	depends NET
