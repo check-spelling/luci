@@ -583,7 +583,7 @@ var CBIMap = CBIAbstractElement.extend(/** @lends LuCI.form.Map.prototype */ {
 	 *
 	 * @param {boolean} [silent=false]
 	 * If set to `true`, trigger an alert message to the user in case saving
-	 * the form data failes. Otherwise fail silently.
+	 * the form data fails. Otherwise fail silently.
 	 *
 	 * @returns {Promise<void>}
 	 * Returns a promise resolving once the entire save operation is complete.
