@@ -54,7 +54,7 @@ if nixio.fs.access("/usr/bin/dockerd") then
 		translate("Log Level"),
 		translate('Set the logging level'))
 	o:value("debug", translate("Debug"))
-	o:value("", translate("Info")) -- This is the default debug level from the deamon is optin is not set
+	o:value("", translate("Info")) -- This is the default debug level from the daemon is optin is not set
 	o:value("warn", translate("Warning"))
 	o:value("error", translate("Error"))
 	o:value("fatal", translate("Fatal"))
