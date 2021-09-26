@@ -1159,7 +1159,7 @@
 		 * @instance
 		 * @memberof LuCI.poll
 		 * @returns {boolean}
-		 * Returns `true` if polling has been stopped or `false` if it din't
+		 * Returns `true` if polling has been stopped or `false` if it didn't
 		 * run to begin with.
 		 */
 		stop: function() {
