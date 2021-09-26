@@ -2332,7 +2332,7 @@
 
 		/**
 		 * A wrapper around {@link LuCI#raise raise()} which also renders
-		 * the error either as modal overlay when `ui.js` is already loaed
+		 * the error either as modal overlay when `ui.js` is already loaded
 		 * or directly into the view body.
 		 *
 		 * @instance
