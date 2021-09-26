@@ -156,7 +156,7 @@ return L.view.extend({
 		s.tab("seconddns", _("Second Server Settings"));
 		s.tab("custom", _("Custom Settings"));
 
-		// Eanble;
+		// Enable;
 		o = s.taboption("settings", form.Flag, "enabled", _("Enable"), _("Enable or disable smartdns server"));
 		o.default = o.disabled;
 		o.rempty = false;
@@ -233,7 +233,7 @@ return L.view.extend({
 			_("Maximum TTL for all domain result."));
 		o.rempty = true;
 
-		// Eanble;
+		// Enable;
 		o = s.taboption("seconddns", form.Flag, "seconddns_enabled", _("Enable"),
 			_("Enable or disable second DNS server."));
 		o.default = o.disabled;
