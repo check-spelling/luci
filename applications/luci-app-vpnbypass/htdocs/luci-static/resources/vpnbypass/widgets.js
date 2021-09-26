@@ -65,7 +65,7 @@ var RPC = {
 
 var statusCBI = form.DummyValue.extend({
 	renderWidget: function (section) {
-		var status = E('span', {}, _("Quering") + "...");
+		var status = E('span', {}, _("Querying") + "...");
 		RPC.on('getInitStatus', function (reply) {
 			if (reply[pkg.Name].version) {
 				if (reply[pkg.Name].running) {
