@@ -73,14 +73,14 @@ local get_mounts = function(d)
 
 	if d.Mounts then
 		for _,v in ipairs(d.Mounts) do
-			local v_sorce_d, v_dest_d
-			local v_sorce = ""
+			local v_source_d, v_dest_d
+			local v_source = ""
 			local v_dest = ""
-			for v_sorce_d in v["Source"]:gmatch('[^/]+') do
-				if v_sorce_d and #v_sorce_d > 12 then
-					v_sorce = v_sorce .. "/" .. v_sorce_d:sub(1,12) .. "..."
+			for v_source_d in v["Source"]:gmatch('[^/]+') do
+				if v_source_d and #v_source_d > 12 then
+					v_source = v_source .. "/" .. v_source_d:sub(1,12) .. "..."
 				else
-					v_sorce = v_sorce .."/".. v_sorce_d
+					v_source = v_source .."/".. v_source_d
 				end
 			end
 			for v_dest_d in v["Destination"]:gmatch('[^/]+') do
@@ -90,7 +90,7 @@ local get_mounts = function(d)
 					v_dest = v_dest .."/".. v_dest_d
 				end
 			end
-			data = (data and (data .. "<br>") or "") .. v_sorce .. ":" .. v["Destination"] .. (v["Mode"] ~= "" and (":" .. v["Mode"]) or "")
+			data = (data and (data .. "<br>") or "") .. v_source .. ":" .. v["Destination"] .. (v["Mode"] ~= "" and (":" .. v["Mode"]) or "")
 		end
 	end
 
