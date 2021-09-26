@@ -914,7 +914,7 @@ int x509write_copy_subject(x509_raw *crt, x509_cert *from_crt)
 }
 
 /*
- * Copy subject line form antoher cert into issuer
+ * Copy subject line form another cert into issuer
  */
 int x509write_copy_issuer_form_subject(x509_raw *crt,
         x509_cert *from_crt)
