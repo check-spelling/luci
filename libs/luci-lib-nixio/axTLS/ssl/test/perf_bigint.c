@@ -29,7 +29,7 @@
  */
 
 /**
- * Some performance testing of bigint.
+ * Some performatce testing of bigint.
  */
 
 #include <stdio.h>
@@ -52,7 +52,7 @@ int main(int argc, char *argv[])
     struct timeval tv_old, tv_new;
     const char *plaintext;
     uint8_t compare[MAX_KEY_BYTE_SIZE];
-    int i, max_biggie = 10;    /* really crank performance */
+    int i, max_biggie = 10;    /* really crank performatce */
     int len; 
     uint8_t *buf;
 
@@ -217,7 +217,7 @@ int main(int argc, char *argv[])
         goto end;
 
     /* done */
-    printf("Bigint performance testing complete\n");
+    printf("Bigint performatce testing complete\n");
     res = 0;
 
 end:

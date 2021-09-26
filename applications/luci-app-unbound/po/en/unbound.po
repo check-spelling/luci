@@ -653,7 +653,7 @@ msgid ""
 msgstr ""
 
 #: applications/luci-app-unbound/luasrc/controller/unbound.lua:127
-msgid "This shows Unbound self reported performance statistics."
+msgid "This shows Unbound self reported performatce statistics."
 msgstr ""
 
 #: applications/luci-app-unbound/luasrc/controller/unbound.lua:115

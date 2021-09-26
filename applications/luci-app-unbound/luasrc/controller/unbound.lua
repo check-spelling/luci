@@ -124,7 +124,7 @@ function QueryStatistics()
         "unbound-control -c /var/lib/unbound/unbound.conf stats_noreset")
 
     local lcldesc = luci.i18n.translate(
-        "This shows Unbound self reported performance statistics.")
+        "This shows Unbound self reported performatce statistics.")
 
     luci.template.render("unbound/show-textbox",
         {heading = "", description = lcldesc, content = lcldata})

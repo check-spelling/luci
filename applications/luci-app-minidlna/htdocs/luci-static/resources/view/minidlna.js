@@ -96,7 +96,7 @@ return view.extend({
 
 		o = s.taboption('advanced', form.Flag, 'wide_links', _('Allow wide links'), _('Set this to allow serving content outside the media root (via symlinks).'));
 
-		o = s.taboption('advanced', form.Flag, 'strict_dlna', _('Strict to DLNA standard'), _('Set this to strictly adhere to DLNA standards. This will allow server-side downscaling of very large JPEG images, which may hurt JPEG serving performance on (at least) Sony DLNA products.'));
+		o = s.taboption('advanced', form.Flag, 'strict_dlna', _('Strict to DLNA standard'), _('Set this to strictly adhere to DLNA standards. This will allow server-side downscaling of very large JPEG images, which may hurt JPEG serving performatce on (at least) Sony DLNA products.'));
 
 		o = s.taboption('advanced', form.Value, 'presentation_url', _('Presentation URL'));
 

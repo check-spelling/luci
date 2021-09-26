@@ -793,7 +793,7 @@ local st	= ns:taboption("debug", Flag, "single_threaded")
 st.title	= string.format(HELP, "SINGLE-THREADED", "Single Threaded" )
 st.description	= translate("Whether to run only one server thread.")
 		.. [[<br /><strong>]]
-		.. translate("This option is only there for debugging purposes. It will drastically reduce performance.")
+		.. translate("This option is only there for debugging purposes. It will drastically reduce performatce.")
 		.. [[</strong>]]
 st.rmempty	= true
 

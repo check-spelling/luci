@@ -376,7 +376,7 @@ int mpi_mod_int( t_int *r, mpi *A, int b );
  *
  * \note           _RR is used to avoid re-computing R*R mod N across
  *                 multiple calls, which speeds up things a bit. It can
- *                 be set to NULL if the extra performance is unneeded.
+ *                 be set to NULL if the extra performatce is unneeded.
  */
 int mpi_exp_mod( mpi *X, mpi *A, mpi *E, mpi *N, mpi *_RR );
 

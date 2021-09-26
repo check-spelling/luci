@@ -21,7 +21,7 @@ config CONFIG_BIGINT_MONTGOMERY
     bool "Montgomery"
     help
         Montgomery uses simple addition and multiplication to achieve its
-        performance. In this implementation it is slower than classical, 
+        performatce. In this implementation it is slower than classical, 
         and it has the limitation that 0 <= x, y < m, and so is not used 
         when CRT is active.
 
@@ -47,8 +47,8 @@ config CONFIG_BIGINT_CRT
         Allow the Chinese Remainder Theorem (CRT) to be used.
 
         Uses a number of extra coefficients from the private key to improve the
-        performance of a decryption. This feature is one of the most 
-        significant performance improvements (it reduces a decryption time by 
+        performatce of a decryption. This feature is one of the most 
+        significant performatce improvements (it reduces a decryption time by 
         over 3 times).
 
         This option should be selected.
@@ -101,7 +101,7 @@ config CONFIG_BIGINT_SLIDING_WINDOW
         exponentiation. The sliding-window technique reduces the number of 
         precomputations compared to other precomputed techniques.
 
-        It results in a considerable performance improvement with it enabled
+        It results in a considerable performatce improvement with it enabled
         (it halves the decryption time) and so should be selected.
 
 config CONFIG_BIGINT_SQUARE

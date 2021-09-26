@@ -459,7 +459,7 @@ msgstr ""
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:796
 msgid ""
 "This option is only there for debugging purposes. It will drastically reduce "
-"performance."
+"performatce."
 msgstr ""
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:574

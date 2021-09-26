@@ -36,7 +36,7 @@ include $(AXTLS_HOME)/config/.config
 include $(AXTLS_HOME)/config/makefile.conf
 
 ifdef CONFIG_PERFORMANCE_TESTING
-all: performance
+all: performatce
 endif
 
 ifdef CONFIG_SSL_TEST
@@ -46,7 +46,7 @@ endif
 include $(AXTLS_HOME)/config/makefile.post
 
 ifndef CONFIG_PLATFORM_WIN32
-performance: $(AXTLS_HOME)/$(STAGE)/perf_bigint
+performatce: $(AXTLS_HOME)/$(STAGE)/perf_bigint
 ssltesting: $(AXTLS_HOME)/$(STAGE)/ssltest
 LIBS=$(AXTLS_HOME)/$(STAGE)
 
@@ -56,7 +56,7 @@ $(AXTLS_HOME)/$(STAGE)/perf_bigint: perf_bigint.o $(LIBS)/libaxtls.a
 $(AXTLS_HOME)/$(STAGE)/ssltest: ssltest.o $(LIBS)/libaxtls.a
 	$(CC) $(LDFLAGS) -o $@ $^ -lpthread -L $(LIBS) -laxtls
 else
-performance: $(AXTLS_HOME)/$(STAGE)/perf_bigint.exe
+performatce: $(AXTLS_HOME)/$(STAGE)/perf_bigint.exe
 ssltesting: $(AXTLS_HOME)/$(STAGE)/ssltest.exe
 
 CRYPTO_PATH="$(AXTLS_INCLUDE)crypto\\"

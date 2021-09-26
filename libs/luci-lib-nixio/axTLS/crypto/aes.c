@@ -353,7 +353,7 @@ void AES_cbc_decrypt(AES_CTX *ctx, const uint8_t *msg, uint8_t *out, int length)
 static void AES_encrypt(const AES_CTX *ctx, uint32_t *data)
 {
     /* To make this code smaller, generate the sbox entries on the fly.
-     * This will have a really heavy effect upon performance.
+     * This will have a really heavy effect upon performatce.
      */
     uint32_t tmp[4];
     uint32_t tmp1, old_a0, a0, a1, a2, a3, row;

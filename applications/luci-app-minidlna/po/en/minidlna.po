@@ -185,11 +185,11 @@ msgstr ""
 msgid ""
 "Set this to strictly adhere to DLNA standards. This will allow server-side "
 "downscaling of very large JPEG images, which may hurt JPEG serving "
-"performance on (at least) Sony DLNA products."
+"performatce on (at least) Sony DLNA products."
 msgstr ""
 "Set this to strictly adhere to DLNA standards. This will allow server-side "
 "downscaling of very large JPEG images, which may hurt JPEG serving "
-"performance on (at least) Sony DLNA products."
+"performatce on (at least) Sony DLNA products."
 
 #: applications/luci-app-minidlna/htdocs/luci-static/resources/view/minidlna.js:78
 msgid ""

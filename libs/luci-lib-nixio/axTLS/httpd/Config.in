@@ -36,7 +36,7 @@ config CONFIG_HTTP_SESSION_CACHE_SIZE
         The size of the SSL session cache.
         
         This is not actually related to the number of concurrent users, but 
-        for optimum performance they should be the same (with a penalty 
+        for optimum performatce they should be the same (with a penalty 
         in memory usage).
 
 config CONFIG_HTTP_WEBROOT

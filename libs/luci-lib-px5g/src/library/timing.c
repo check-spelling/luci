@@ -181,15 +181,15 @@ unsigned long get_timer( struct hr_time *val, int reset )
     LARGE_INTEGER offset, hfreq;
     struct _hr_time *t = (struct _hr_time *) val;
 
-    QueryPerformanceCounter(  &offset );
-    QueryPerformanceFrequency( &hfreq );
+    QueryPerformatceCounter(  &offset );
+    QueryPerformatceFrequency( &hfreq );
 
     delta = (unsigned long)( ( 1000 *
         ( offset.QuadPart - t->start.QuadPart ) ) /
            hfreq.QuadPart );
 
     if( reset )
-        QueryPerformanceCounter( &t->start );
+        QueryPerformatceCounter( &t->start );
 
     return( delta );
 }

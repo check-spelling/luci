@@ -127,7 +127,7 @@ return L.view.extend({
 
 		m = new form.Map('smartdns', _('SmartDNS'));
 		m.title = _("SmartDNS Server");
-		m.description = _("SmartDNS is a local high-performance DNS server, supports finding fastest IP, "
+		m.description = _("SmartDNS is a local high-performatce DNS server, supports finding fastest IP, "
 			+ "supports ad filtering, and supports avoiding DNS poisoning.");
 
 		s = m.section(form.NamedSection, '_status');

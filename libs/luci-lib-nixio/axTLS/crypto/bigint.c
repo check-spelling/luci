@@ -1248,7 +1248,7 @@ static bigint *comp_mod(bigint *bi, int mod)
 
 /*
  * Barrett reduction has no need for some parts of the product, so ignore bits
- * of the multiply. This routine gives Barrett its big performance
+ * of the multiply. This routine gives Barrett its big performatce
  * improvements over Classical/Montgomery reduction methods. 
  */
 static bigint *partial_multiply(BI_CTX *ctx, bigint *bia, bigint *bib, 
@@ -1398,7 +1398,7 @@ static void precompute_slide_window(BI_CTX *ctx, int window, bigint *g1)
  * @brief Perform a modular exponentiation.
  *
  * This function requires bi_set_mod() to have been called previously. This is 
- * one of the optimisations used for performance.
+ * one of the optimisations used for performatce.
  * @param ctx [in]  The bigint session context.
  * @param bi  [in]  The bigint on which to perform the mod power operation.
  * @param biexp [in] The bigint exponent.

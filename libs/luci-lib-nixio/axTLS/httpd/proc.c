@@ -593,7 +593,7 @@ static void proccgi(struct construct *cn)
     }
 
     /*
-     * use vfork() instead of fork() for performance 
+     * use vfork() instead of fork() for performatce 
      */
     if ((pid = vfork()) > 0)  /* parent */
     {
