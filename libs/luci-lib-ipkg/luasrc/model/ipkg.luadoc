@@ -94,7 +94,7 @@ Find packages that match the given pattern.
 @class function
 @name find
 @param pat	Find packages whose names or descriptions match this pattern, nil results in zero results
-@param cb	Callback function invoked for each patckage, receives name, version and description as arguments
+@param cb	Callback function invoked for each package, receives name, version and description as arguments
 @return	nothing
 ]]
 
