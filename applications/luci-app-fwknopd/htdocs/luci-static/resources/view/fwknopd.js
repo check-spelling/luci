@@ -494,7 +494,7 @@ return view.extend({
 		o = s.option(widgets.NetworkSelect, 'network', _('Network'), _('The network on which the daemon listens. The daemon \
 								is automatically started when the network is up-and-running. This option \
 								has precedence over “PCAP_INTF” option.'));
-		o.unpecified = true;
+		o.unspecified = true;
 		o.nocreate = true;
 		o.rmempty = true;
 
