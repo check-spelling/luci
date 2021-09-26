@@ -30,7 +30,7 @@ return baseclass.extend({
 				return true;
 
 			if (!v.match(/^[0-7]{1,4}$/))
-				return _('Expecting permssions in octal notation');
+				return _('Expecting permissions in octal notation');
 
 			return true;
 		};

@@ -364,7 +364,7 @@ msgid "Expecting decimal value lower than one"
 msgstr ""
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/email.js:33
-msgid "Expecting permssions in octal notation"
+msgid "Expecting permissions in octal notation"
 msgstr ""
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/rrdtool.js:49
