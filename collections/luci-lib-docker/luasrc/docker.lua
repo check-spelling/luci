@@ -412,7 +412,7 @@ gen_api(_docker, "GET", "exec", "inspect")
 gen_api(_docker, "GET", "containers", "get_archive")
 gen_api(_docker, "PUT", "containers", "put_archive")
 gen_api(_docker, "GET", "containers", "export")
--- TODO: attch
+-- TODO: attach
 
 gen_api(_docker, "GET", "images", "list")
 gen_api(_docker, "POST", "images", "create")
