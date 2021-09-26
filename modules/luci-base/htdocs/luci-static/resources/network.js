@@ -4030,7 +4030,7 @@ WifiNetwork = baseclass.extend(/** @lends LuCI.network.WifiNetwork.prototype */ 
 	 * The amount of bytes that have been received or sent.
 	 *
 	 * @property {number} [failed]
-	 * The amount of failed tranmission attempts. Only applicable to
+	 * The amount of failed transmission attempts. Only applicable to
 	 * transmit rates.
 	 *
 	 * @property {number} [retries]
@@ -4054,7 +4054,7 @@ WifiNetwork = baseclass.extend(/** @lends LuCI.network.WifiNetwork.prototype */ 
 	 * HT or VHT rates.
 	 *
 	 * @property {number} [40mhz]
-	 * Specifies whether the tranmission rate used 40MHz wide channel.
+	 * Specifies whether the transmission rate used 40MHz wide channel.
 	 * Only applicable to HT or VHT rates.
 	 *
 	 * Note: this option exists for backwards compatibility only and its
