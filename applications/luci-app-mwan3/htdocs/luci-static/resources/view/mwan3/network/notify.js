@@ -40,7 +40,7 @@ return view.extend({
 			_('* %s: Is called by netifd and mwan3track').format('ifup') + '<br />' +
 			_('* %s: Is called by netifd and mwan3track').format('ifdown') + '<br />' +
 			_('* %s: Is only called by mwan3track if tracking was successful').format('connected') + '<br />' +
-			_('* %s: Is only called by mwan3track if tracking has failed').format('disonnected') + '<br />' +
+			_('* %s: Is only called by mwan3track if tracking has failed').format('disconnected') + '<br />' +
 			_('%s: Name of the interface which went up or down (e.g. \"wan\" or \"wwan\")').format('$INTERFACE') + '<br />' +
 			_('%s: Name of Physical device which interface went up or down (e.g. \"eth0\" or \"wwan0\")').format('$DEVICE') + '<br />'),
 			E('p', {}, E('textarea', { 'style': 'width:100%', 'rows': 10, 'disabled': isReadonlyView }, [ mwan3user != null ? mwan3user : '' ]))
