@@ -303,7 +303,7 @@ namespace axTLS
 
         /**
          * @brief Write to the SSL data stream.
-         * @param ssl [in] An SSL obect reference.
+         * @param ssl [in] An SSL object reference.
          * @param out_data [in] The data to be written
          * @return The number of bytes sent, or if < 0 if an error.
          * @see ssl.h for the error code list.
@@ -315,7 +315,7 @@ namespace axTLS
 
         /**
          * @brief Write to the SSL data stream.
-         * @param ssl [in] An SSL obect reference.
+         * @param ssl [in] An SSL object reference.
          * @param out_data [in] The data to be written
          * @param out_len [in] The number of bytes to be written
          * @return The number of bytes sent, or if < 0 if an error.

@@ -266,7 +266,7 @@ EXP_FUNC int STDCALL ssl_read(SSL *ssl, uint8_t **in_data);
 /**
  * @brief Write to the SSL data stream. 
  * The socket must be in blocking mode.
- * @param ssl [in] An SSL obect reference.
+ * @param ssl [in] An SSL object reference.
  * @param out_data [in] The data to be written
  * @param out_len [in] The number of bytes to be written.
  * @return The number of bytes sent, or if < 0 if an error.
