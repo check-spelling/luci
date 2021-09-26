@@ -4091,7 +4091,7 @@ void ReportTable(
   /* Generate the table of rule information 
   **
   ** Note: This code depends on the fact that rules are number
-  ** sequentually beginning with 0.
+  ** sequentially beginning with 0.
   */
   for(rp=lemp->rule; rp; rp=rp->next){
     fprintf(out,"  { %d, %d },\n",rp->lhs->index,rp->nrhs); lineno++;
