@@ -19,8 +19,8 @@ if (arg[1] == "") then
 
 else
     s7 = m7:section(NamedSection, arg[1], "zone",
-        translatef("Directed Zone"),
-        translatef("Edit a forward, stub, or zone-file-cache zone "
+        translate("Directed Zone"),
+        translate("Edit a forward, stub, or zone-file-cache zone "
         .. "for Unbound to use instead of recursion."))
 
     s7.anonymous = true

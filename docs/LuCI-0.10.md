@@ -17,11 +17,11 @@ Code that uses _translate()'' or ''i18n()_ must be changed as follows:
 	
 	-- old style:
 	translate("some_text", "Some Text")
-	translatef("some_format_text", "Some formatted Text: %d", 123)
+	translate("some_format_text", "Some formatted Text: %d", 123)
 	
 	-- new style:
 	translate("Some Text")
-	translatef("Some formatted Text: %d", 123)
+	translate("Some formatted Text: %d", 123)
 	
 
 Likewise for templates:

@@ -13,8 +13,8 @@ POSIX::setlocale(POSIX::LC_ALL, 'C');
 
 my %keywords = (
 	'.js' => [ '_:1', '_:1,2c', 'N_:2,3', 'N_:2,3,4c' ],
-	'.lua' => [ '_:1', '_:1,2c', 'translate:1', 'translate:1,2c', 'translatef:1', 'N_:2,3', 'N_:2,3,4c', 'ntranslate:2,3', 'ntranslate:2,3,4c' ],
-	'.htm' => [ '_:1', '_:1,2c', 'translate:1', 'translate:1,2c', 'translatef:1', 'N_:2,3', 'N_:2,3,4c', 'ntranslate:2,3', 'ntranslate:2,3,4c' ],
+	'.lua' => [ '_:1', '_:1,2c', 'translate:1', 'translate:1,2c', 'translate:1', 'N_:2,3', 'N_:2,3,4c', 'ntranslate:2,3', 'ntranslate:2,3,4c' ],
+	'.htm' => [ '_:1', '_:1,2c', 'translate:1', 'translate:1,2c', 'translate:1', 'N_:2,3', 'N_:2,3,4c', 'ntranslate:2,3', 'ntranslate:2,3,4c' ],
 	'.json' => [ '_:1', '_:1,2c' ]
 );
 
@@ -148,7 +148,7 @@ sub preprocess_htm($$) {
 	# as translate(...) calls.
 	my @extra_function_keywords =
 		map { ("$_:1", "$_:1,2c") }
-		uniq($source =~ m!((?:\w+\.)+translatef?)[ \t\n]*\(!g);
+		uniq($source =~ m!((?:\w+\.)+translate?)[ \t\n]*\(!g);
 
 	return ("[==[$source]==]", @extra_function_keywords);
 }
@@ -161,7 +161,7 @@ sub preprocess_lua($$) {
 	# as translate(...) calls.
 	my @extra_function_keywords =
 		map { ("$_:1", "$_:1,2c") }
-		uniq($source =~ m!((?:\w+\.)+translatef?)[ \t\n]*\(!g);
+		uniq($source =~ m!((?:\w+\.)+translate?)[ \t\n]*\(!g);
 
 	return ($source, @extra_function_keywords);
 }

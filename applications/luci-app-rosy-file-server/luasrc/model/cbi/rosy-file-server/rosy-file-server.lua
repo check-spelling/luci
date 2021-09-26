@@ -47,7 +47,7 @@ function n.cfgvalue(self, section)
 
 	if t and t ~='d' then
 		-- File
-		return translatef("<a href='%s%s'>%s</a>",
+		return translate("<a href='%s%s'>%s</a>",
 			string.sub(server_root, 5, #server_root), hv, hv);
 	elseif t then
 		-- Directory
@@ -56,10 +56,10 @@ function n.cfgvalue(self, section)
 
 			if dir ~= "/" then dir = dir .. "/" end
 
-			return translatef("<a href='%s?server_root=%s'>%s</a>",
+			return translate("<a href='%s?server_root=%s'>%s</a>",
 				luci.dispatcher.build_url("httpfs/rosy-file-server"), dir, hv)
 		else
-			return translatef("<a href='%s?server_root=%s%s'>%s</a>",
+			return translate("<a href='%s?server_root=%s%s'>%s</a>",
 				luci.dispatcher.build_url("httpfs/rosy-file-server"),
 				server_root, hv, hv)
 		end

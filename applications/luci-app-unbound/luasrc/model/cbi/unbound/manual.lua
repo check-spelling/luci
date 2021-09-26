@@ -11,7 +11,7 @@ m2:append(Template("unbound/css-editing"))
 m2.submit = translate("Save")
 m2.reset = false
 s2 = m2:section(SimpleSection, "",
-    translatef(
+    translate(
     "Edit '" .. filename .. "' when you do not use UCI."))
 
 frm = s2:option(TextValue, "data")

@@ -11,7 +11,7 @@ m4:append(Template("unbound/css-editing"))
 m4.submit = translate("Save")
 m4.reset = false
 s4 = m4:section(SimpleSection, "",
-    translatef(
+    translate(
     "Edit clauses such as 'forward-zone:' for 'include: " .. filename .. "'"))
 
 frm = s4:option(TextValue, "data")

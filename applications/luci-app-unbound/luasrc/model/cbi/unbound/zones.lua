@@ -13,7 +13,7 @@ local logerr = ut.exec("logread -e 'unbound.*error.*ssl library'")
 
 m5 = Map("unbound")
 s5 = m5:section(TypedSection, "zone", "Zones",
-    translatef("Organize directed forward, stub, and authoritative zones"
+    translate("Organize directed forward, stub, and authoritative zones"
     .. " <a href=\"%s\" target=\"_blank\">(help)</a>.",
     "https://www.unbound.net/",
     "https://github.com/openwrt/packages/blob/master/net/unbound/files/README.md"))
@@ -42,7 +42,7 @@ enabled.rmempty = false
 
 if logerr and (#logerr > 0) then
     logerr = logerr:sub((1 + #logerr - math.min(#logerr, 250)), #logerr)
-    m5.message = translatef( "Note: SSL/TLS library is missing an API. "
+    m5.message = translate( "Note: SSL/TLS library is missing an API. "
         .. "Please review syslog. >> logread ... " .. logerr )
 end
 
@@ -161,7 +161,7 @@ function servers.cfgvalue(self, s)
     and itls and (itls == "1")
     and iidx and (#iidx > 0) then
         -- show TLS certificate name index if provided
-        otxt = otxt .. translatef(
+        otxt = otxt .. translate(
                     " with default certificate for <var>%s</var>", iidx)
     end
 
@@ -169,10 +169,10 @@ function servers.cfgvalue(self, s)
     if iurl and (#iurl > 0) and itype and itype:match("auth") then
         if otxt and (#otxt > 0) then
             -- include optional URL filed for auth-zone: type
-            otxt = otxt .. translatef(", and try <var>%s</var>", iurl)
+            otxt = otxt .. translate(", and try <var>%s</var>", iurl)
 
         else
-            otxt = translatef("download from <var>%s</var>", iurl)
+            otxt = translate("download from <var>%s</var>", iurl)
         end
     end
 
@@ -198,11 +198,11 @@ function servers.cfgvalue(self, s)
 
 
         if otxt and (#otxt > 0) and rtxt and (#rtxt > 0) then
-            otxt = otxt .. translatef(
+            otxt = otxt .. translate(
                     ", and <var>%s</var> entries ", resolvfile) .. rtxt
 
         elseif rtxt and (#rtxt > 0) then
-            otxt = translatef(
+            otxt = translate(
                     "use <var>%s</var> nameservers ", resolvfile) .. rtxt
         end
     end

@@ -11,7 +11,7 @@ m6:append(Template("unbound/css-editing"))
 m6.submit = translate("Save")
 m6.reset = false
 s6 = m6:section(SimpleSection, "",
-    translatef("Edit '" .. filename .. "' "
+    translate("Edit '" .. filename .. "' "
     .. "and recipes can be found in OpenWrt "
     .. "<a href=\"%s\" target=\"_blank\">Guides</a> "
     .. "and <a href=\"%s\" target=\"_blank\">GitHub</a>.",

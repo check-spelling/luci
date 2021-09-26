@@ -16,7 +16,7 @@ m = SimpleForm("aria2", "%s - %s" % { translate("Aria2"), translate("Files") },
 m.reset = false
 m.submit = false
 
-s = m:section(SimpleSection, nil, translatef("Content of config file: <code>%s</code>", config_file))
+s = m:section(SimpleSection, nil, translate("Content of config file: <code>%s</code>", config_file))
 
 o = s:option(TextValue, "_config")
 o.rows = 20
@@ -26,7 +26,7 @@ o.cfgvalue = function()
 	return util.trim(v) ~= "" and v or translate("Empty file.")
 end
 
-s = m:section(SimpleSection, nil, translatef("Content of session file: <code>%s</code>", session_file))
+s = m:section(SimpleSection, nil, translate("Content of session file: <code>%s</code>", session_file))
 
 o = s:option(TextValue, "_session")
 o.rows = 20

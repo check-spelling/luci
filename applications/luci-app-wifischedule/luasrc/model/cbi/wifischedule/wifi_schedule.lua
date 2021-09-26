@@ -30,7 +30,7 @@ function time_validator(self, value, desc)
             return value
         end
     end
-    return nil, translatef("The value %s is invalid", desc)
+    return nil, translate("The value %s is invalid", desc)
 end
 
 -- -------------------------------------------------------------------------------------------------

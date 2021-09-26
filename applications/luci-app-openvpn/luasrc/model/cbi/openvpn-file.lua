@@ -15,7 +15,7 @@ p.mode     = "file"
 p.instance = arg[1]
 
 if not cfg_file or not fs.access(cfg_file) then
-	local f = SimpleForm("error", nil, translatef("The OVPN config file (%s) could not be found, please check your configuration.", cfg_file or "n/a"))
+	local f = SimpleForm("error", nil, translate("The OVPN config file (%s) could not be found, please check your configuration.", cfg_file or "n/a"))
 	f:append(Template("openvpn/ovpn_css"))
 	f.reset = false
 	f.submit = false
@@ -24,7 +24,7 @@ end
 
 if fs.stat(cfg_file).size >= 102400 then
 	f = SimpleForm("error", nil,
-		translatef("The size of the OVPN config file (%s) is too large for online editing in LuCI (&ge; 100 KB). ", cfg_file)
+		translate("The size of the OVPN config file (%s) is too large for online editing in LuCI (&ge; 100 KB). ", cfg_file)
 		.. translate("Please edit this file directly in a terminal session."))
 	f:append(Template("openvpn/ovpn_css"))
 	f.reset = false
@@ -37,7 +37,7 @@ f:append(Template("openvpn/ovpn_css"))
 f.submit = translate("Save")
 f.reset = false
 
-s = f:section(SimpleSection, nil, translatef("Section to modify the OVPN config file (%s)", cfg_file))
+s = f:section(SimpleSection, nil, translate("Section to modify the OVPN config file (%s)", cfg_file))
 file = s:option(TextValue, "data1")
 file.datatype = "string"
 file.rows = 20
@@ -58,7 +58,7 @@ function s.handle(self, state, data1)
 	return true
 end
 
-s = f:section(SimpleSection, nil, translatef("Section to add an optional 'auth-user-pass' file with your credentials (%s)", auth_file))
+s = f:section(SimpleSection, nil, translate("Section to add an optional 'auth-user-pass' file with your credentials (%s)", auth_file))
 file = s:option(TextValue, "data2")
 file.datatype = "string"
 file.rows = 5

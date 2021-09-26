@@ -11,7 +11,7 @@ m3:append(Template("unbound/css-editing"))
 m3.submit = translate("Save")
 m3.reset = false
 s3 = m3:section(SimpleSection, "",
-    translatef(
+    translate(
     "Edit 'server:' clause options for 'include: " .. filename .. "'"))
 
 frm = s3:option(TextValue, "data")

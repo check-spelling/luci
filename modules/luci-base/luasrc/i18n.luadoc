@@ -25,7 +25,7 @@ Return the translated value for a specific translation key.
 Return the translated value for a specific translation key and use it as sprintf pattern.
 
 @class function
-@name translatef
+@name translate
 @param key		Default translation text
 @param ...		Format parameters
 @return			Translated and formatted string

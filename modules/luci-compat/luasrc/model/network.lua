@@ -1135,7 +1135,7 @@ function protocol.errors(self)
 			   type(err.code) == "string"
 			then
 				rv = rv or { }
-				rv[#rv+1] = IFACE_ERRORS[err.code] or lng.translatef("Unknown error (%s)", err.code)
+				rv[#rv+1] = IFACE_ERRORS[err.code] or lng.translate("Unknown error (%s)", err.code)
 			end
 		end
 	end

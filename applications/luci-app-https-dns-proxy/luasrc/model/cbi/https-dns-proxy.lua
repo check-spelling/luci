@@ -70,7 +70,7 @@ local ubusStatus = util.ubus("service", "list", { name = packageName })
 local packageVersion = getPackageVersion()
 
 if packageVersion == "" then
-	packageStatusCode, packageStatus = -1, translatef("%s is not installed or not found", packageName)
+	packageStatusCode, packageStatus = -1, translate("%s is not installed or not found", packageName)
 else  
 	packageStatusCode, packageStatus = 1, ""
 	for n = 1,20 do
@@ -89,7 +89,7 @@ else
 			end
 			la = la or "127.0.0.1"
 			lp = lp or n + 5053
-			packageStatus = packageStatus .. translatef("%s DoH at %s:%s", getProviderName(url), la, lp) .. "\n"
+			packageStatus = packageStatus .. translate("%s DoH at %s:%s", getProviderName(url), la, lp) .. "\n"
 		else
 			break
 		end
@@ -109,7 +109,7 @@ end
 
 m = Map("https-dns-proxy", translate("DNS HTTPS Proxy Settings"))
 
-h = m:section(TypedSection, "_dummy", translatef("Service Status [%s %s]", packageName, packageVersion))
+h = m:section(TypedSection, "_dummy", translate("Service Status [%s %s]", packageName, packageVersion))
 h.template = "cbi/nullsection"
 ss = h:option(DummyValue, "_dummy", translate("Service Status"))
 ss.template = packageName .. "/status"
@@ -120,11 +120,11 @@ if packageStatusCode ~= -1 then
 end
 
 c = m:section(NamedSection, "config", "https-dns-proxy", translate("Configuration"))
-d1 = c:option(ListValue, "update_dnsmasq_config", translate("Update DNSMASQ Config on Start/Stop"), translatef("If update option is selected, the 'DNS forwardings' section of %sDHCP and DNS%s will be automatically updated to use selected DoH providers (%smore information%s).", "<a href=\"" .. dispatcher.build_url("admin/network/dhcp") .. "\">", "</a>", "<a href=\"" .. readmeURL .. "#default-settings" .. "\" target=\"_blank\">", "</a>"))
+d1 = c:option(ListValue, "update_dnsmasq_config", translate("Update DNSMASQ Config on Start/Stop"), translate("If update option is selected, the 'DNS forwardings' section of %sDHCP and DNS%s will be automatically updated to use selected DoH providers (%smore information%s).", "<a href=\"" .. dispatcher.build_url("admin/network/dhcp") .. "\">", "</a>", "<a href=\"" .. readmeURL .. "#default-settings" .. "\" target=\"_blank\">", "</a>"))
 d1:value('*', translate("Update all configs"))
 local dnsmasq_num = 0
 uci:foreach("dhcp", "dnsmasq", function(s)
-d1:value(tostring(dnsmasq_num), translatef("Update %s config", "dhcp.@dnsmasq[" .. tostring(dnsmasq_num) .. "]"))
+d1:value(tostring(dnsmasq_num), translate("Update %s config", "dhcp.@dnsmasq[" .. tostring(dnsmasq_num) .. "]"))
 dnsmasq_num = dnsmasq_num + 1
 end)
 d1:value('-', translate("Do not update configs"))

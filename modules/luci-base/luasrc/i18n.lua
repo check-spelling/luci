@@ -44,7 +44,7 @@ function translate(key)
 	return tparser.translate(key) or key
 end
 
-function translatef(key, ...)
+function translate(key, ...)
 	return tostring(translate(key)):format(...)
 end
 

@@ -108,7 +108,7 @@ function active.cfgvalue(self, section)
 	local pid = s.getPID(section)
 	if pid ~= nil then
 		return (sys.process.signal(pid, 0))
-			and translatef("yes (%i)", pid)
+			and translate("yes (%i)", pid)
 			or  translate("no")
 	end
 	return translate("no")

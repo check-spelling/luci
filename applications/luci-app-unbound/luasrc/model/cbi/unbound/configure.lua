@@ -23,7 +23,7 @@ local lstrig = ucl:get_first("dhcp", "odhcpd", "leasetrigger")
 
 m1 = Map("unbound")
 s1 = m1:section(TypedSection, "unbound", translate("Recursive DNS"),
-    translatef("Unbound <a href=\"%s\" target=\"_blank\">(NLnet Labs)</a>"
+    translate("Unbound <a href=\"%s\" target=\"_blank\">(NLnet Labs)</a>"
     .. " is a validating, recursive, and caching DNS resolver"
     .. " <a href=\"%s\" target=\"_blank\">(help)</a>.",
     "https://www.unbound.net/",
@@ -33,7 +33,7 @@ s1.addremove = false
 s1.anonymous = true
 
 if (valman == "0") and (dhcplk == "odhcpd") and (lstrig ~= "/usr/lib/unbound/odhcpd.sh") then
-    m1.message = translatef( "Note: local DNS is configured to look at odhcpd, "
+    m1.message = translate( "Note: local DNS is configured to look at odhcpd, "
     .. "but odhcpd UCI lease trigger is incorrectly set: ")
     .. "dhcp.odhcpd.leasetrigger='" .. lstrig .. "'"
 end

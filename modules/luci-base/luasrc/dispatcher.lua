@@ -753,7 +753,7 @@ local function init_template_engine(ctx)
 		write       = http.write;
 		include     = function(name) tpl.Template(name):render(getfenv(2)) end;
 		translate   = i18n.translate;
-		translatef  = i18n.translatef;
+		translate  = i18n.translate;
 		export      = function(k, v) if tpl.context.viewns[k] == nil then tpl.context.viewns[k] = v end end;
 		striptags   = xml.striptags;
 		pcdata      = xml.pcdata;

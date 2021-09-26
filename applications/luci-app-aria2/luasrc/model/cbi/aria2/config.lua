@@ -35,7 +35,7 @@ local aria2 = aria2_info()
 m = Map("aria2", "%s - %s" % { translate("Aria2"), translate("Settings") },
 "<p>%s</p><p>%s</p>" % {
 	translate("Aria2 is a lightweight multi-protocol &amp; multi-source, cross platform download utility."),
-	translatef("For more information, please visit: %s",
+	translate("For more information, please visit: %s",
 		"<a href=\"https://aria2.github.io\" target=\"_blank\">https://aria2.github.io</a>")
 })
 

@@ -63,7 +63,7 @@
 				write(w.byte_format(filesize))
 	
 				if flashsize > 0 then
-					write(luci.i18n.translatef(
+					write(luci.i18n.translate(
 						" (%s available)",
 						w.byte_format(flashsize)
 					))
