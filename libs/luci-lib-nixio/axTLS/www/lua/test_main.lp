@@ -1,5 +1,5 @@
 <html>
-<head><title>Embeded Lua Test</title></head>
+<head><title>Embedded Lua Test</title></head>
 
 <body>
 cgi = {
