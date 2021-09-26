@@ -29,7 +29,7 @@
 '
 
 '
-' A wrapper around the unmanaged Integererface to give a semi-decent VB.NET API
+' A wrapper around the unmanaged Interface to give a semi-decent VB.NET API
 '
 
 Imports System
