@@ -92,7 +92,7 @@ function smartdnsRenderStatus(res) {
 		var dnsmasqServer = uci.get_first('dhcp', 'dnsmasq', 'server') || "";
 
 		if (dnsmasqServer.indexOf(matchLine) < 0) {
-			renderHTML += "<br /><span style=\"color:red;font-weight:bold\">" + _("Dnsmasq Forwared To Smartdns Failure") + "</span>";
+			renderHTML += "<br /><span style=\"color:red;font-weight:bold\">" + _("Dnsmasq Forwarded To Smartdns Failure") + "</span>";
 		}
 	} else if (redirectMode === "redirect") {
 		var redirectRules = (ipt || '').split(/\n/).filter(function (rule) {
