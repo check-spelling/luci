@@ -373,7 +373,7 @@ Issue an ubus call.
 @param object		String containing the ubus object to call
 @param method		String containing the ubus method to call
 @param values		Table containing the values to pass
-@return				Table containin the ubus result
+@return				Table containing the ubus result
 ]]
 
 ---[[

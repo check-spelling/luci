@@ -19,7 +19,7 @@ Extract extension from a filename and return corresponding mime-type or
 @class function
 @name to_mime
 @param filename	The filename for which the mime type is guessed
-@return			String containign the determined mime type
+@return			String containing the determined mime type
 ]]
 
 ---[[
