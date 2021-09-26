@@ -581,7 +581,7 @@ luci.ip.cidr IPv4 instance.
 <h3>Usage:</h3>
 <pre>ipv4 = luci.ip.checkip4(luci.ip.new("127.0.0.1"))  -- "127.0.0.1" 
 ipv4 = luci.ip.checkip4("127.0.0.1")               -- "127.0.0.1" 
-ipv4 = luci.ip.checkip4("nonesense")               -- nothing 
+ipv4 = luci.ip.checkip4("nonsense")               -- nothing 
 ipv4 = luci.ip.checkip4(123)                       -- nothing 
 ipv4 = luci.ip.checkip4(nil)                       -- nothing 
 ipv4 = luci.ip.checkip4()                          -- nothing</pre>
@@ -642,7 +642,7 @@ luci.ip.cidr IPv6 instance.
 <h3>Usage:</h3>
 <pre>ipv6 = luci.ip.checkip6(luci.ip.new("0:0:0:0:0:0:0:1"))  -- "::1" 
 ipv6 = luci.ip.checkip6("0:0:0:0:0:0:0:1")               -- "::1" 
-ipv6 = luci.ip.checkip6("nonesense")                     -- nothing 
+ipv6 = luci.ip.checkip6("nonsense")                     -- nothing 
 ipv6 = luci.ip.checkip6(123)                             -- nothing 
 ipv6 = luci.ip.checkip6(nil)                             -- nothing 
 ipv6 = luci.ip.checkip6()                                -- nothing</pre>
@@ -703,7 +703,7 @@ MAC address instance.
 <h3>Usage:</h3>
 <pre>mac = luci.ip.checkmac(luci.ip.new("00-11-22-cc-dd-ee"))  -- "00:11:22:CC:DD:EE" 
 mac = luci.ip.checkmac("00:11:22:cc:dd:ee")               -- "00:11:22:CC:DD:EE" 
-mac = luci.ip.checkmac("nonesense")                       -- nothing 
+mac = luci.ip.checkmac("nonsense")                       -- nothing 
 mac = luci.ip.checkmac(123)                               -- nothing 
 mac = luci.ip.checkmac(nil)                               -- nothing 
 mac = luci.ip.checkmac()                                  -- nothing</pre>
