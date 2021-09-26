@@ -337,7 +337,7 @@ return baseclass.extend(/** @lends LuCI.uci.prototype */ {
 	 * anonymous (`true`) or named (`false`).
 	 *
 	 * @property {number} .index
-	 * The `.index` property specifes the sort order of the section.
+	 * The `.index` property specifies the sort order of the section.
 	 *
 	 * @property {string} .name
 	 * The `.name` property holds the name of the section object. It may be

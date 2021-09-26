@@ -226,7 +226,7 @@ return baseclass.extend(/** @lends LuCI.rpc.prototype */ {
 	 *    be returned as default instead.
 	 *
 	 * @property {LuCI.rpc~filterFn} [filter]
-	 * Specfies an optional filter function which is invoked to transform the
+	 * Specifies an optional filter function which is invoked to transform the
 	 * received reply data before it is returned to the caller.
 	 *
 	 * @property {boolean} [reject=false]
