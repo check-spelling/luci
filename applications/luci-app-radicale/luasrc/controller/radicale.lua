@@ -153,7 +153,7 @@ function value_parse(self, section, novld)
 	local rm_opt = ( self.rmempty or self.optional )
 	local eq_cfg					-- flag: equal cfgvalue
 
-	-- If favlue and cvalue are both tables and have the same content
+	-- If fvalue and cvalue are both tables and have the same content
 	-- make them identical
 	if type(fvalue) == "table" and type(cvalue) == "table" then
 		eq_cfg = (#fvalue == #cvalue)
