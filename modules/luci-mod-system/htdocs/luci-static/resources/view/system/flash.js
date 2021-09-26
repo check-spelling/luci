@@ -12,7 +12,7 @@ var callSystemValidateFirmwareImage = rpc.declare({
 	object: 'system',
 	method: 'validate_firmware_image',
 	params: [ 'path' ],
-	expect: { '': { valid: false, forcable: true } }
+	expect: { '': { valid: false, forcible: true } }
 });
 
 function findStorageSize(procmtd, procpart) {
