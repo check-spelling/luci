@@ -184,7 +184,7 @@ m.handle = function(self, state, data)
 				ipvlan_mode = data.ipvlan_mode
 		}
 		elseif driver == "overlay" then
-			create_body["Ingress"] = data.ingerss == 1 and true or false
+			create_body["Ingress"] = data.ingress == 1 and true or false
 		end
 
 		if ipv6 and data.subnet6 and data.subnet6 then
