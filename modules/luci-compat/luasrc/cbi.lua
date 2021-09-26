@@ -1405,7 +1405,7 @@ function AbstractValue.parse(self, section, novld)
 	local fvalue = self:formvalue(section)
 	local cvalue = self:cfgvalue(section)
 
-	-- If favlue and cvalue are both tables and have the same content
+	-- If fvalue and cvalue are both tables and have the same content
 	-- make them identical
 	if type(fvalue) == "table" and type(cvalue) == "table" then
 		local equal = #fvalue == #cvalue
