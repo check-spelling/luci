@@ -67,7 +67,7 @@ module "nixio.README"
 -- <li>In general all functions which don't have any remarks 
 -- in their documentation are available on all platforms.</li>
 -- <li>Functions with a (POSIX), (Linux) or similar prefix are only available
--- on these specific platforms. Same appplies to parameters of functions
+-- on these specific platforms. Same applies to parameters of functions
 -- with a similar suffix.</li>
 -- <li>Some functions might have limitations on some platforms. This should
 -- be stated in the documentation. Please also consult your OS API 
