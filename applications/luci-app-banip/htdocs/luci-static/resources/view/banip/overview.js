@@ -44,7 +44,7 @@ function handleAction(ev) {
 					E('input', { 'class': 'cbi-input-text', 'id': 'timerH', 'maxlength': '2' }, [
 					]),
 					'\xa0\xa0\xa0',
-					_('The hours portition (req., range: 0-23)')
+					_('The hours portion (req., range: 0-23)')
 				]),
 				E('label', { 'class': 'cbi-input-text', 'style': 'padding-top:.5em' }, [
 					E('input', { 'class': 'cbi-input-text', 'id': 'timerM', 'maxlength': '2' }),
