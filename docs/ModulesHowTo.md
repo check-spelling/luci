@@ -80,7 +80,7 @@ You see these action functions simple have to be added to a dispatching entry.
 As you might or might not know: CGI specification requires you to send a Content-Type header before you can send your content. You will find several shortcuts (like the one used above) as well as redirecting functions in the module *luci.http*
 
 ## Views
-If you only want to show the user a text or some interesting familiy photos it may be enough to use a HTML-template. These templates can also include some Lua code but be aware that writing whole office suites by only using these templates might be called "dirty" by other developers.
+If you only want to show the user a text or some interesting family photos it may be enough to use a HTML-template. These templates can also include some Lua code but be aware that writing whole office suites by only using these templates might be called "dirty" by other developers.
 
 Now let's create a little template *_lucidir_/view/myapp-mymodule/helloworld.htm* with the content:
 
