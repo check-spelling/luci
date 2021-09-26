@@ -3170,7 +3170,7 @@ var UI = baseclass.extend(/** @lends LuCI.ui.prototype */ {
 	 * be opened. Invoking showModal() while a modal dialog is already open will
 	 * replace the open dialog with a new one having the specified contents.
 	 *
-	 * Additional CSS class names may be passed to influence the appearence of
+	 * Additional CSS class names may be passed to influence the appearance of
 	 * the dialog. Valid values for the classes depend on the underlying theme.
 	 *
 	 * @see LuCI.dom.content
@@ -3285,7 +3285,7 @@ var UI = baseclass.extend(/** @lends LuCI.ui.prototype */ {
 	 * Notification banners will stay in place until dismissed by the user.
 	 * Multiple banners may be shown at the same time.
 	 *
-	 * Additional CSS class names may be passed to influence the appearence of
+	 * Additional CSS class names may be passed to influence the appearance of
 	 * the banner. Valid values for the classes depend on the underlying theme.
 	 *
 	 * @see LuCI.dom.content
