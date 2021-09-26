@@ -501,7 +501,7 @@ var CBIMap = CBIAbstractElement.extend(/** @lends LuCI.form.Map.prototype */ {
 	 * `LuCI.form.AbstractSection`.
 	 *
 	 * @param {...string} classargs
-	 * Additional arguments which are passed as-is to the contructor of the
+	 * Additional arguments which are passed as-is to the constructor of the
 	 * given section class. Refer to the class specific constructor
 	 * documentation for details.
 	 *
@@ -996,7 +996,7 @@ var CBIAbstractSection = CBIAbstractElement.extend(/** @lends LuCI.form.Abstract
 	 * [LuCI.form.AbstractSection]{@link LuCI.form.AbstractSection}.
 	 *
 	 * @param {...*} classargs
-	 * Additional arguments which are passed as-is to the contructor of the
+	 * Additional arguments which are passed as-is to the constructor of the
 	 * given option class. Refer to the class specific constructor
 	 * documentation for details.
 	 *
@@ -1029,7 +1029,7 @@ var CBIAbstractSection = CBIAbstractElement.extend(/** @lends LuCI.form.Abstract
 	 * [LuCI.form.AbstractSection]{@link LuCI.form.AbstractSection}.
 	 *
 	 * @param {...*} classargs
-	 * Additional arguments which are passed as-is to the contructor of the
+	 * Additional arguments which are passed as-is to the constructor of the
 	 * given option class. Refer to the class specific constructor
 	 * documentation for details.
 	 *
