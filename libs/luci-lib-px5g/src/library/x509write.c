@@ -357,7 +357,7 @@ static int asn1_append_nodes(x509_node *node, int tag, int anz, ...)
 }
 
 /*
- * write a ASN.1 conform object identifiere include a "tag"
+ * write a ASN.1 conform object identifier include a "tag"
  */
 static int asn1_add_oid(x509_node *node, unsigned char *oid, size_t len,
         int tag, int tag_val, unsigned char *value, size_t val_len)
