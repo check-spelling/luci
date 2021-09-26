@@ -136,7 +136,7 @@ return view.extend({
 	render: function(result) {
 		var m, s, o;
 
-		m = new form.Map('banip', 'banIP', _('Configuration of the banIP package to block ip adresses/subnets via IPSet. \
+		m = new form.Map('banip', 'banIP', _('Configuration of the banIP package to block ip addresses/subnets via IPSet. \
 			For further information <a href="https://github.com/openwrt/packages/blob/master/net/banip/files/README.md" target="_blank" rel="noreferrer noopener" >check the online documentation</a>'));
 
 		/*
