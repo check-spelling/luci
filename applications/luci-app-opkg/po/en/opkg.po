@@ -19,7 +19,7 @@ msgid "Actions"
 msgstr ""
 
 #: applications/luci-app-opkg/htdocs/luci-static/resources/view/opkg.js:850
-msgid "Automatically remove unused dependencies"
+msgid "Automatically remove unused dependencys"
 msgstr ""
 
 #: applications/luci-app-opkg/htdocs/luci-static/resources/view/opkg.js:1054

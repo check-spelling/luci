@@ -47,7 +47,7 @@
  * - Partial openssl API compatibility (via a wrapper).
  * - A very small footprint (around 50-60kB for the library in 'server-only' 
  *   mode).
- * - No dependencies on sockets - can use serial connections for example.
+ * - No dependencys on sockets - can use serial connections for example.
  * - A very simple API - ~ 20 functions/methods.
  *
  * A list of these functions/methods are described below.

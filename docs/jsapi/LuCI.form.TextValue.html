@@ -5189,7 +5189,7 @@ different way.</p>
         <p>Add a dependency constraint to the option.</p>
 <p>Dependency constraints allow making the presence of option elements
 dependant on the current values of certain other options within the
-same form. An option element with unsatisfied dependencies will be
+same form. An option element with unsatisfied dependencys will be
 hidden from the view and its current value is omitted when saving.</p>
 <p>Multiple constraints (that is, multiple calls to <code>depends()</code>) are
 treated as alternatives, forming a logical &quot;or&quot; expression.</p>
@@ -5308,7 +5308,7 @@ is ignored. The recognized tags are:</p>
             <td class="description last">
                 
                 <p>The name of the option to depend on or an object describing multiple
-dependencies which must be satified (a logical &quot;and&quot; expression).</p></td>
+dependencys which must be satified (a logical &quot;and&quot; expression).</p></td>
         </tr>
 	
 	
@@ -6393,7 +6393,7 @@ validation constraints.</td>
     <div class="description">
         <p>Remove the corresponding value from the configuration.</p>
 <p>This function is invoked upon saving the parent form when the option
-element has been hidden due to unsatisfied dependencies or when the
+element has been hidden due to unsatisfied dependencys or when the
 user cleared the input value and the option is marked optional.</p>
 <p>The default implementation simply removes the associated option from the
 UCI configuration (or the associated JavaScript object property in

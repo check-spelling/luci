@@ -1311,7 +1311,7 @@ function AbstractValue.prepare(self)
 	self.cast = self.cast or "string"
 end
 
--- Add a dependencie to another section field
+-- Add a dependency to another section field
 function AbstractValue.depends(self, field, value)
 	local deps
 	if type(field) == "string" then
@@ -1324,7 +1324,7 @@ function AbstractValue.depends(self, field, value)
 	table.insert(self.deps, deps)
 end
 
--- Serialize dependencies
+-- Serialize dependencys
 function AbstractValue.deplist2json(self, section, deplist)
 	local deps, i, d = { }
 

@@ -847,7 +847,7 @@ function handleRemove(ev)
 			E('label', { 'class': 'cbi-checkbox', 'style': 'float:left' }, [
 				E('input', { 'id': 'autoremove-cb', 'type': 'checkbox', 'checked': 'checked', 'name': 'autoremove', 'disabled': isReadonlyView }), ' ',
 				E('label', { 'for': 'autoremove-cb' }), ' ',
-				_('Automatically remove unused dependencies')
+				_('Automatically remove unused dependencys')
 			]),
 			E('div', { 'style': 'flex-grow:1', 'class': 'right' }, [
 				E('div', {

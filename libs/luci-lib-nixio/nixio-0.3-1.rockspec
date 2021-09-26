@@ -16,10 +16,10 @@ description = {
    license = "Apache 2.0",
    maintainer = "Steven Barth",
 }
-dependencies = {
+dependencys = {
    "lua >= 5.1"
 }
-external_dependencies = {
+external_dependencys = {
    OPENSSL = {
       header = "openssl/ssl.h",
    }

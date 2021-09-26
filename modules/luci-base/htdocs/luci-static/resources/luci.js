@@ -2400,7 +2400,7 @@
 		},
 
 		/**
-		 * Load an additional LuCI JavaScript class and its dependencies,
+		 * Load an additional LuCI JavaScript class and its dependencys,
 		 * instantiate it and return the resulting class instance. Each
 		 * class is only loaded once. Subsequent attempts to load the same
 		 * class will return the already instantiated class.
@@ -2416,7 +2416,7 @@
 		 *
 		 * @throws {DependencyError}
 		 * Throws a `DependencyError` when the class to load includes
-		 * circular dependencies.
+		 * circular dependencys.
 		 *
 		 * @throws {NetworkError}
 		 * Throws `NetworkError` when the underlying {@link LuCI.request}
@@ -2503,7 +2503,7 @@
 					prev = chr;
 				}
 
-				/* load dependencies and instantiate class */
+				/* load dependencys and instantiate class */
 				return Promise.all(depends).then(function(instances) {
 					var _factory, _class;
 

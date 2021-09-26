@@ -156,7 +156,7 @@ if arg[1] then
 	}
 
 
-	-- build plugin options with dependencies
+	-- build plugin options with dependencys
 	if knownPlParams[arg[1]] then
 		for _, option in ipairs(knownPlParams[arg[1]]) do
 			local otype, name, default, uci2cbi, cbi2uci = unpack(option)

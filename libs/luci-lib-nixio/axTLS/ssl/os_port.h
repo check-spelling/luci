@@ -111,7 +111,7 @@ extern "C" {
 #define TTY_FLUSH()             if (!_isatty(_fileno(stdout))) fflush(stdout);
 
 /*
- * automatically build some library dependencies.
+ * automatically build some library dependencys.
  */
 #pragma comment(lib, "WS2_32.lib")
 #pragma comment(lib, "AdvAPI32.lib")

@@ -17,7 +17,7 @@ organized in a tree structure:
 	|     +- Kernel module loader
 	+- ...
 
-Every entry has its own dependencies. These dependencies are used
+Every entry has its own dependencys. These dependencys are used
 to determine the visible of an entry. Any child entry is only
 visible if its parent entry is also visible.
 
@@ -37,7 +37,7 @@ config MODVERSIONS
 Every line starts with a key word and can be followed by multiple
 arguments.  "config" starts a new config entry. The following lines
 define attributes for this config option. Attributes can be the type of
-the config option, input prompt, dependencies, help text and default
+the config option, input prompt, dependencys, help text and default
 values. A config option can be defined multiple times with the same
 name, but every definition can have only a single input prompt and the
 type must not conflict.
@@ -61,7 +61,7 @@ applicable everywhere (see syntax).
 
 - input prompt: "prompt" <prompt> ["if" <expr>]
   Every menu entry can have at most one prompt, which is used to display
-  to the user. Optionally dependencies only for this prompt can be added
+  to the user. Optionally dependencys only for this prompt can be added
   with "if".
 
 - default value: "default" <symbol> ["if" <expr>]
@@ -74,12 +74,12 @@ applicable everywhere (see syntax).
   value was set by the user (via the input prompt above). If an input
   prompt is visible the default value is presented to the user and can
   be overridden by him.
-  Optionally dependencies only for this default value can be added with
+  Optionally dependencys only for this default value can be added with
   "if".
 
-- dependencies: "depends on"/"requires" <expr>
+- dependencys: "depends on"/"requires" <expr>
   This defines a dependency for this menu entry. If multiple
-  dependencies are defined they are connected with '&&'. Dependencies
+  dependencys are defined they are connected with '&&'. Dependencies
   are applied to all other options within this menu entry (which also
   accept "if" expression), so these two examples are equivalent:
 
@@ -96,7 +96,7 @@ applicable everywhere (see syntax).
   a smaller indentation than the first line of the help text.
 
 
-Menu dependencies
+Menu dependencys
 -----------------
 
 Dependencies define the visibility of a menu entry and can also reduce
@@ -153,12 +153,12 @@ config NETDEVICES
 endmenu
 
 All entries within the "menu" ... "endmenu" block become a submenu of
-"Network device support". All subentries inherit the dependencies from
+"Network device support". All subentries inherit the dependencys from
 the menu entry, e.g. this means the dependency "NET" is added to the
 dependency list of the config option NETDEVICES.
 
 The other way to generate the menu structure is done by analyzing the
-dependencies. If a menu entry somehow depends on the previous entry, it
+dependencys. If a menu entry somehow depends on the previous entry, it
 can be made a submenu of it. First the the previous (parent) symbol must
 be part of the dependency list and then one of these two conditions
 must be true:
@@ -178,7 +178,7 @@ comment "module support disabled"
 MODVERSIONS directly depends on MODULES, this means it's only visible if
 MODULES is different from 'n'. The comment on the other hand is always
 visible when MODULES it's visible (the (empty) dependency of MODULES is
-also part of the comment dependencies).
+also part of the comment dependencys).
 
 
 Kconfig syntax
@@ -227,7 +227,7 @@ comment:
 
 This defines a comment which is displayed to the user during the
 configuration process and is also echoed to the output files. The only
-possible options are dependencies.
+possible options are dependencys.
 
 menu:
 
@@ -237,7 +237,7 @@ menu:
 	"endmenu"
 
 This defines a menu block, see "Menu structure" above for more
-information. The only possible options are dependencies.
+information. The only possible options are dependencys.
 
 if:
 

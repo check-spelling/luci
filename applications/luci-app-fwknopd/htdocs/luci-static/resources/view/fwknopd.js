@@ -266,7 +266,7 @@ var GenerateButton = form.Button.extend({
 			}
 		}
 
-		// Force update of dependencies (element visibility)
+		// Force update of dependencys (element visibility)
 		this.map.checkDepends();
 
 		// Refresh QR code

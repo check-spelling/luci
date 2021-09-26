@@ -62,7 +62,7 @@ Creates a new option
 
 #### function :depends(_key, value_)
 Only select those sections where _key == value_ <br />
-If you call this function several times the dependencies will be linked with **"or"**
+If you call this function several times the dependencys will be linked with **"or"**
 
 #### function .filter(_self, section_) -abstract-
 You can override this function to filter certain sections that will not be parsed.
@@ -92,7 +92,7 @@ To instantiate use: `NamedSection:option(Value, "option", "title", "description"
 
 #### function :depends(key, value)
 Only show this option field if another option _key_ is set to _value_ in the same section.<br />
-If you call this function several times the dependencies will be linked with **"or"**
+If you call this function several times the dependencys will be linked with **"or"**
 
 #### function :value(key, value)
 Convert this text field into a combobox if possible and add a selection option.
@@ -125,7 +125,7 @@ or `TypedSection:option(ListValue, "option", "title", "description")`
 
 #### function :depends(key, value)
 Only show this option field if another option _key_ is set to _value_ in the same section.<br />
-If you call this function several times the dependencies will be linked with **"or"**
+If you call this function several times the dependencys will be linked with **"or"**
 
 #### function :value(_key, value_)
 Adds an entry to the selection list
@@ -158,7 +158,7 @@ To instantiate use: `NamedSection:option(Flag, "option", ""title", "description"
 
 #### function :depends (_key, value_)
 Only show this option field if another option _key_ is set to _value_ in the same section.<br />
-If you call this function several times the dependencies will be linked with **"or"**
+If you call this function several times the dependencys will be linked with **"or"**
 
 #### property .default = nil
 The default value
@@ -188,7 +188,7 @@ To instantiate use: `NamedSection:option(MultiValue, "option", ""title", "descri
 
 #### function :depends (_key, value_)
 Only show this option field if another option _key_ is set to _value_ in the same section.<br />
-If you call this function several times the dependencies will be linked with **"or"**
+If you call this function several times the dependencys will be linked with **"or"**
 
 #### function :value(_key, value_)
 Adds an entry to the list
@@ -233,7 +233,7 @@ To instantiate use: `NamedSection:option(DummyValue, "option", ""title", "descri
 
 #### property :depends (_key, value_)
 Only show this option field if another option _key_ is set to _value_ in the same section.<br />
-If you call this function several times the dependencies will be linked with **"or"**
+If you call this function several times the dependencys will be linked with **"or"**
 
 ----
 

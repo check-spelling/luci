@@ -1100,13 +1100,13 @@ CLASS_GRAPH            = NO
 
 # If the COLLABORATION_GRAPH and HAVE_DOT tags are set to YES then doxygen 
 # will generate a graph for each documented class showing the direct and 
-# indirect implementation dependencies (inheritance, containment, and 
+# indirect implementation dependencys (inheritance, containment, and 
 # class references variables) of the class with other documented classes.
 
 COLLABORATION_GRAPH    = NO
 
 # If the GROUP_GRAPHS and HAVE_DOT tags are set to YES then doxygen 
-# will generate a graph for groups, showing the direct groups dependencies
+# will generate a graph for groups, showing the direct groups dependencys
 
 GROUP_GRAPHS           = NO
 
@@ -1123,7 +1123,7 @@ TEMPLATE_RELATIONS     = NO
 
 # If the ENABLE_PREPROCESSING, SEARCH_INCLUDES, INCLUDE_GRAPH, and HAVE_DOT 
 # tags are set to YES then doxygen will generate a graph for each documented 
-# file showing the direct and indirect include dependencies of the file with 
+# file showing the direct and indirect include dependencys of the file with 
 # other documented files.
 
 INCLUDE_GRAPH          = NO
@@ -1149,7 +1149,7 @@ CALL_GRAPH             = NO
 GRAPHICAL_HIERARCHY    = NO
 
 # If the DIRECTORY_GRAPH, SHOW_DIRECTORIES and HAVE_DOT tags are set to YES 
-# then doxygen will show the dependencies a directory has on other directories 
+# then doxygen will show the dependencys a directory has on other directories 
 # in a graphical way. The dependency relations are determined by the #include
 # relations between the files in the directories.
 
