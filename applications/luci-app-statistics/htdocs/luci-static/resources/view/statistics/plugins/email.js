@@ -5,7 +5,7 @@
 
 return baseclass.extend({
 	title: _('E-Mail Plugin Configuration'),
-	description: _('The email plugin creates a unix socket which can be used to transmit email-statistics to a running collectd daemon. This plugin is primarily intended to be used in conjunction with Mail::SpamAssasin::Plugin::Collectd but can be used in other ways as well.'),
+	description: _('The email plugin creates a unix socket which can be used to transmit email-statistics to a running collectd daemon. This plugin is primarily intended to be used in conjunction with Mail::SpamAssassin::Plugin::Collectd but can be used in other ways as well.'),
 
 	addFormOptions: function(s) {
 		var o;
