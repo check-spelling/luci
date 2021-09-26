@@ -923,7 +923,7 @@
 		 * @hideconstructor
 		 * @classdesc
 		 *
-		 * The `Request.poll` class provides some convience wrappers around
+		 * The `Request.poll` class provides some convenience wrappers around
 		 * {@link LuCI.poll} mainly to simplify registering repeating HTTP
 		 * request calls as polling functions.
 		 */
