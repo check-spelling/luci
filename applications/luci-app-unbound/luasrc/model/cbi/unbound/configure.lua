@@ -85,7 +85,7 @@ if (valman == "0") then
     prt.datatype = "port"
     prt.placeholder = "53"
 
-    --Avanced Tab
+    --Advanced Tab
     rlh = s1:taboption("advanced", Flag, "rebind_localhost",
         translate("Filter Localhost Rebind"),
         translate("Protect against upstream response of 127.0.0.0/8"))
