@@ -380,7 +380,7 @@
                                          addClass = null;
                                          value = link.properties && link.properties[opts.linkClassProperty];
                                      if (opts.linkClassProperty && value) {
-                                         // if value is stirng use that as class
+                                         // if value is string use that as class
                                          if (typeof(value) === "string") {
                                              addClass = value;
                                          }
@@ -405,7 +405,7 @@
                                          addClass = null;
                                          value = node.properties && node.properties[opts.nodeClassProperty];
                                      if (opts.nodeClassProperty && value) {
-                                         // if value is stirng use that as class
+                                         // if value is string use that as class
                                          if (typeof(value) === "string") {
                                              addClass = value;
                                          }
