@@ -348,7 +348,7 @@ Test whether the current system is operating in big endian mode.
 ]]
 
 ---[[
-Execute given commandline and gather stdout.
+Execute given command-line and gather stdout.
 
 @class				function
 @name				exec
