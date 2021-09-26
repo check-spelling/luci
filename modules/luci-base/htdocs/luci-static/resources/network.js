@@ -1635,7 +1635,7 @@ Network = baseclass.extend(/** @lends LuCI.network.prototype */ {
 	 * @property {Array<Object<string, boolean|number|string>>} ports
 	 * The `ports` property points to an array describing the populated
 	 * ports of the switch in the external label order. Each array item is
-	 * an object containg the following keys:
+	 * an object containing the following keys:
 	 *  - `num` - the internal switch port number
 	 *  - `label` - the label of the port, e.g. `LAN 1` or `CPU (eth0)`
 	 *  - `device` - the connected Linux network device name (CPU ports only)
