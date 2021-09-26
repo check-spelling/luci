@@ -531,12 +531,12 @@ if action == "info" then
 			})
 		elseif section == "15connect" then
 			local connect_network = table_info[section]._value
-			local network_opiton
+			local network_option
 			if connect_network ~= "none"
 				and connect_network ~= "bridge"
 				and connect_network ~= "host" then
 
-				network_opiton = table_info[section]._opts ~= "" and {
+				network_option = table_info[section]._opts ~= "" and {
 					IPAMConfig={
 						IPv4Address=table_info[section]._opts
 					}
@@ -547,7 +547,7 @@ if action == "info" then
 				name = connect_network,
 				body = {
 					Container = container_id,
-					EndpointConfig= network_opiton
+					EndpointConfig= network_option
 				}
 			})
 		end
