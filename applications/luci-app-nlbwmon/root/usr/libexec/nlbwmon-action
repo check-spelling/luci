@@ -38,7 +38,7 @@ case "$1" in
 				-s)
 					case "$2" in
 						?) delim=$2 ;;
-						*) echo "Invalid delimitter" >&2; exit 1 ;;
+						*) echo "Invalid delimiter" >&2; exit 1 ;;
 					esac
 					shift
 				;;
