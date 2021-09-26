@@ -33,7 +33,7 @@ module "nixio"
 -- <li>prefix = Prefix (if available)</li>
 -- <li>flags = Table of interface flags (up, multicast, loopback, ...)</li>
 -- <li>data = Statistics (Linux, "packet"-family)</li>
--- <li>hatype = Hardware Type Identifier (Linix, "packet"-family)</li>
+-- <li>hatype = Hardware Type Identifier (Linux, "packet"-family)</li>
 -- <li>ifindex = Interface Index (Linux, "packet"-family)</li>
 -- </ul>
 
