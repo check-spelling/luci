@@ -26,7 +26,7 @@ var modalDiv = null,
  * events.
  *
  * UI widget instances are usually not supposed to be created by view code
- * directly, instead they're implicitely created by `LuCI.form` when
+ * directly, instead they're implicitly created by `LuCI.form` when
  * instantiating CBI forms.
  *
  * This class is automatically instantiated as part of `LuCI.ui`. To use it
@@ -302,7 +302,7 @@ var UIElement = baseclass.extend(/** @lends LuCI.ui.AbstractElement.prototype */
  * The `Textfield` class implements a standard single line text input field.
  *
  * UI widget instances are usually not supposed to be created by view code
- * directly, instead they're implicitely created by `LuCI.form` when
+ * directly, instead they're implicitly created by `LuCI.form` when
  * instantiating CBI forms.
  *
  * This class is automatically instantiated as part of `LuCI.ui`. To use it
@@ -426,7 +426,7 @@ var UITextfield = UIElement.extend(/** @lends LuCI.ui.Textfield.prototype */ {
  * The `Textarea` class implements a multiline text area input field.
  *
  * UI widget instances are usually not supposed to be created by view code
- * directly, instead they're implicitely created by `LuCI.form` when
+ * directly, instead they're implicitly created by `LuCI.form` when
  * instantiating CBI forms.
  *
  * This class is automatically instantiated as part of `LuCI.ui`. To use it
@@ -542,7 +542,7 @@ var UITextarea = UIElement.extend(/** @lends LuCI.ui.Textarea.prototype */ {
  * The `Checkbox` class implements a simple checkbox input field.
  *
  * UI widget instances are usually not supposed to be created by view code
- * directly, instead they're implicitely created by `LuCI.form` when
+ * directly, instead they're implicitly created by `LuCI.form` when
  * instantiating CBI forms.
  *
  * This class is automatically instantiated as part of `LuCI.ui`. To use it
@@ -681,7 +681,7 @@ var UICheckbox = UIElement.extend(/** @lends LuCI.ui.Checkbox.prototype */ {
  * values are enabled or not.
  *
  * UI widget instances are usually not supposed to be created by view code
- * directly, instead they're implicitely created by `LuCI.form` when
+ * directly, instead they're implicitly created by `LuCI.form` when
  * instantiating CBI forms.
  *
  * This class is automatically instantiated as part of `LuCI.ui`. To use it
@@ -889,7 +889,7 @@ var UISelect = UIElement.extend(/** @lends LuCI.ui.Select.prototype */ {
  * supports non-text choice labels.
  *
  * UI widget instances are usually not supposed to be created by view code
- * directly, instead they're implicitely created by `LuCI.form` when
+ * directly, instead they're implicitly created by `LuCI.form` when
  * instantiating CBI forms.
  *
  * This class is automatically instantiated as part of `LuCI.ui`. To use it
@@ -1950,7 +1950,7 @@ var UIDropdown = UIElement.extend(/** @lends LuCI.ui.Dropdown.prototype */ {
  * with a set of enforced default properties for easier instantiation.
  *
  * UI widget instances are usually not supposed to be created by view code
- * directly, instead they're implicitely created by `LuCI.form` when
+ * directly, instead they're implicitly created by `LuCI.form` when
  * instantiating CBI forms.
  *
  * This class is automatically instantiated as part of `LuCI.ui`. To use it
@@ -2017,7 +2017,7 @@ var UICombobox = UIDropdown.extend(/** @lends LuCI.ui.Combobox.prototype */ {
  * into a dropdown to chose from a set of different action choices.
  *
  * UI widget instances are usually not supposed to be created by view code
- * directly, instead they're implicitely created by `LuCI.form` when
+ * directly, instead they're implicitly created by `LuCI.form` when
  * instantiating CBI forms.
  *
  * This class is automatically instantiated as part of `LuCI.ui`. To use it
@@ -2134,7 +2134,7 @@ var UIComboButton = UIDropdown.extend(/** @lends LuCI.ui.ComboButton.prototype *
  * from a set of predefined choices.
  *
  * UI widget instances are usually not supposed to be created by view code
- * directly, instead they're implicitely created by `LuCI.form` when
+ * directly, instead they're implicitly created by `LuCI.form` when
  * instantiating CBI forms.
  *
  * This class is automatically instantiated as part of `LuCI.ui`. To use it
@@ -2489,7 +2489,7 @@ var UIDynamicList = UIElement.extend(/** @lends LuCI.ui.DynamicList.prototype */
  * which allows to store form data without exposing it to the user.
  *
  * UI widget instances are usually not supposed to be created by view code
- * directly, instead they're implicitely created by `LuCI.form` when
+ * directly, instead they're implicitly created by `LuCI.form` when
  * instantiating CBI forms.
  *
  * This class is automatically instantiated as part of `LuCI.ui`. To use it
@@ -2555,7 +2555,7 @@ var UIHiddenfield = UIElement.extend(/** @lends LuCI.ui.Hiddenfield.prototype */
  * browse, select and delete files beneath a predefined remote directory.
  *
  * UI widget instances are usually not supposed to be created by view code
- * directly, instead they're implicitely created by `LuCI.form` when
+ * directly, instead they're implicitly created by `LuCI.form` when
  * instantiating CBI forms.
  *
  * This class is automatically instantiated as part of `LuCI.ui`. To use it

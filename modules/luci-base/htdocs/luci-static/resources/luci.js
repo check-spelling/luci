@@ -1053,7 +1053,7 @@
 
 		/**
 		 * Add a new operation to the polling loop. If the polling loop is not
-		 * already started at this point, it will be implicitely started.
+		 * already started at this point, it will be implicitly started.
 		 *
 		 * @instance
 		 * @memberof LuCI.poll
@@ -1097,7 +1097,7 @@
 
 		/**
 		 * Remove an operation from the polling loop. If no further operatons
-		 * are registered, the polling loop is implicitely stopped.
+		 * are registered, the polling loop is implicitly stopped.
 		 *
 		 * @instance
 		 * @memberof LuCI.poll
@@ -1478,7 +1478,7 @@
 		 *
 		 * When `val` is of any other type, it will be added as attribute
 		 * to the given `node` as-is, with the underlying `setAttribute()`
-		 * call implicitely turning it into a string.
+		 * call implicitly turning it into a string.
 		 */
 		attr: function(node, key, val) {
 			if (!this.elem(node))
