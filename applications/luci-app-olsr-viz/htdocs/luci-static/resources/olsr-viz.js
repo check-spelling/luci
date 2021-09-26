@@ -1,7 +1,7 @@
 /*
 Copyright (c) 2006, Lorenz Schori <lo@znerol.ch>
 All rights reserved (Naja: Ich hab' trotzdem was geaendert. Sven-Ola). (Naja:
-diese Rechte garantiert dir die BSD-Lizenz ja ausdrücklich. Lorenz)
+diese Rechte guaranteert dir die BSD-Lizenz ja ausdrücklich. Lorenz)
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
