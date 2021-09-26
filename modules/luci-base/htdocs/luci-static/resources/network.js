@@ -3496,7 +3496,7 @@ WifiDevice = baseclass.extend(/** @lends LuCI.network.WifiDevice.prototype */ {
 	 *
 	 * @returns {Promise<Array<LuCI.network.WifiNetwork>>}
 	 * Returns a promise resolving to an array of `Network.WifiNetwork`
-	 * instances respresenting the wireless networks associated with this
+	 * instances representing the wireless networks associated with this
 	 * radio device.
 	 */
 	getWifiNetworks: function() {
