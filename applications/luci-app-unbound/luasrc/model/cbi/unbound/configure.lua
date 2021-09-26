@@ -33,8 +33,8 @@ s1.addremove = false
 s1.anonymous = true
 
 if (valman == "0") and (dhcplk == "odhcpd") and (lstrig ~= "/usr/lib/unbound/odhcpd.sh") then
-    m1.message = translatef( "Note: local DNS is configured to look at odhpcd, "
-    .. "but odhpcd UCI lease trigger is incorrectly set: ")
+    m1.message = translatef( "Note: local DNS is configured to look at odhcpd, "
+    .. "but odhcpd UCI lease trigger is incorrectly set: ")
     .. "dhcp.odhcpd.leasetrigger='" .. lstrig .. "'"
 end
 
