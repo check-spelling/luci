@@ -962,7 +962,7 @@ var CBIAbstractSection = CBIAbstractElement.extend(/** @lends LuCI.form.Abstract
 	 * contents. If omitted, no description will be rendered.
 	 *
 	 * @throws {Error}
-	 * Throws an exeption if a tab with the same `name` already exists.
+	 * Throws an exception if a tab with the same `name` already exists.
 	 */
 	tab: function(name, title, description) {
 		if (this.tabs && this.tabs[name])
@@ -2972,7 +2972,7 @@ var CBIGridSection = CBITableSection.extend(/** @lends LuCI.form.GridSection.pro
 	 * contents. If omitted, no description will be rendered.
 	 *
 	 * @throws {Error}
-	 * Throws an exeption if a tab with the same `name` already exists.
+	 * Throws an exception if a tab with the same `name` already exists.
 	 */
 	tab: function(name, title, description) {
 		CBIAbstractSection.prototype.tab.call(this, name, title, description);
