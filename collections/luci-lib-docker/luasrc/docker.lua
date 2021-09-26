@@ -251,7 +251,7 @@ local gen_header = function(options, http_method, api_group, api_action, name_or
 		end
 	end
 
-	-- when requst_body is function, we need to custom header using custom header
+	-- when request_body is function, we need to custom header using custom header
 	if request and request.body and type(request.body) == "function" then
 		if not header:match("Content-Length:") then
 			header = header .. "Transfer-Encoding: chunked\r\n"
