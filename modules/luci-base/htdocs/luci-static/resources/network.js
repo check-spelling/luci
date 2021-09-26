@@ -2084,7 +2084,7 @@ Protocol = baseclass.extend(/** @lends LuCI.network.Protocol.prototype */ {
 	},
 
 	/**
-	 * Return a human readable description for the protcol, such as
+	 * Return a human readable description for the protocol, such as
 	 * `Static address` or `DHCP client`.
 	 *
 	 * This function should be overwritten by subclasses.
@@ -2435,7 +2435,7 @@ Protocol = baseclass.extend(/** @lends LuCI.network.Protocol.prototype */ {
 	 *
 	 * @returns {string}
 	 * Returns the name of the opkg package required for the protocol to
-	 * function, e.g. `odhcp6c` for the `dhcpv6` prototocol.
+	 * function, e.g. `odhcp6c` for the `dhcpv6` protocol.
 	 */
 	getOpkgPackage: function() {
 		return null;
@@ -2482,7 +2482,7 @@ Protocol = baseclass.extend(/** @lends LuCI.network.Protocol.prototype */ {
 	 * on demand instead of using existing physical interfaces.
 	 *
 	 * Examples for virtual protocols are `6in4` which `gre` spawn tunnel
-	 * network device on startup, examples for non-virtual protcols are
+	 * network device on startup, examples for non-virtual protocols are
 	 * `dhcp` or `static` which apply IP configuration to existing interfaces.
 	 *
 	 * This function should be overwritten by subclasses.
