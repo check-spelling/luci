@@ -24,9 +24,9 @@ interval = s:option(Value, "interval", translate("Test-run interval"), translate
 interval.datatype = "uinteger"
 interval.default = "30"
 
-offline_treshold = s:option(Value, "offline_threshold", translate("Switch_to_offline threshold"), translate("Failure counter after how many failed download attempts, the state is considered as offline"))
-offline_treshold.datatype = "uinteger"
-offline_treshold.default = "1"
+offline_threshold = s:option(Value, "offline_threshold", translate("Switch_to_offline threshold"), translate("Failure counter after how many failed download attempts, the state is considered as offline"))
+offline_threshold.datatype = "uinteger"
+offline_threshold.default = "1"
 
 add_hostname_to_ssid = s:option(Flag, "add_hostname_to_ssid", translate("Append hostname to ssid"), translate("Append the router's hostname to the SSID when connectivity check fails"))
 add_hostname_to_ssid.rmempty = false

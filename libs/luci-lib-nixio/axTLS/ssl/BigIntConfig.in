@@ -68,7 +68,7 @@ config CONFIG_BIGINT_KARATSUBA
         It costs about 2kB to enable it.
 
 config MUL_KARATSUBA_THRESH
-    int "Karatsuba Multiplication Theshold"
+    int "Karatsuba Multiplication Threshold"
     default 20
     depends on CONFIG_BIGINT_KARATSUBA
     help
