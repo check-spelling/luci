@@ -1096,7 +1096,7 @@
 		},
 
 		/**
-		 * Remove an operation from the polling loop. If no further operatons
+		 * Remove an operation from the polling loop. If no further operations
 		 * are registered, the polling loop is implicitly stopped.
 		 *
 		 * @instance
