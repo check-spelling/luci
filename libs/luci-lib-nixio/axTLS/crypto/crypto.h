@@ -44,7 +44,7 @@ extern "C" {
 #include "bigint_impl.h"
 #include "bigint.h"
 
-/* enable features based on a 'super-set' capbaility. */
+/* enable features based on a 'super-set' capability. */
 #if defined(CONFIG_SSL_FULL_MODE) 
 #define CONFIG_SSL_ENABLE_CLIENT
 #define CONFIG_SSL_CERT_VERIFICATION
