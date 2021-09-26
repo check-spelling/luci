@@ -3108,7 +3108,7 @@ void ReportOutput(struct lemon *lemp)
 }
 
 /* Search for the file "name" which is in the same directory as
-** the exacutable */
+** the executable */
 PRIVATE char *pathsearch(char *argv0, char *name, int modemask)
 {
   const char *pathlist;
