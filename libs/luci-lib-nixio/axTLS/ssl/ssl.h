@@ -331,7 +331,7 @@ EXP_FUNC int STDCALL ssl_handshake_status(const SSL *ssl);
  * - SSL_BUILD_MODE The build mode. This will be one of the following:
  *   - SSL_BUILD_SERVER_ONLY            (basic server mode)
  *   - SSL_BUILD_ENABLE_VERIFICATION    (server can do client authentication)
- *   - SSL_BUILD_ENABLE_CLIENT          (client/server capabilties)
+ *   - SSL_BUILD_ENABLE_CLIENT          (client/server capabilities)
  *   - SSL_BUILD_FULL_MODE              (client/server with diagnostics)
  *   - SSL_BUILD_SKELETON_MODE          (skeleton mode)
  * - SSL_MAX_CERT_CFG_OFFSET The maximum number of certificates allowed.
