@@ -1,7 +1,7 @@
 # luci-app-attendedsysupgrade
 
 This app allows firmware upgrades of routers while keeping user installed packages.
-To do so the app sends a request to an *Atttended SysUpgrade server* which will
+To do so the app sends a request to an *Attended SysUpgrade server* which will
 respond with a custom image, containing all previously installed packages.
 
 The process takes per images between 30 seconds and 5 minutes, please be
