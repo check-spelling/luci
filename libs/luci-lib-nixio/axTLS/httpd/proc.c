@@ -42,29 +42,29 @@
 
 static const char * index_file = "index.html";
 
-static int special_read(struct connstruct *cn, void *buf, size_t count);
-static int special_write(struct connstruct *cn, 
+static int special_read(struct construct *cn, void *buf, size_t count);
+static int special_write(struct construct *cn, 
                                         const char *buf, size_t count);
-static void send_error(struct connstruct *cn, int err);
+static void send_error(struct construct *cn, int err);
 static int hexit(char c);
 static void urldecode(char *buf);
-static void buildactualfile(struct connstruct *cn);
+static void buildactualfile(struct construct *cn);
 static int sanitizefile(const char *buf);
 static int sanitizehost(char *buf);
-static int htaccess_check(struct connstruct *cn);
+static int htaccess_check(struct construct *cn);
 static const char *getmimetype(const char *name);
 
 #if defined(CONFIG_HTTP_DIRECTORIES)
 static void urlencode(const uint8_t *s, char *t);
-static void procdirlisting(struct connstruct *cn);
+static void procdirlisting(struct construct *cn);
 #endif
 #if defined(CONFIG_HTTP_HAS_CGI)
-static void proccgi(struct connstruct *cn);
-static void decode_path_info(struct connstruct *cn, char *path_info);
-static int init_read_post_data(char *buf, char *data, struct connstruct *cn, int old_rv);
+static void proccgi(struct construct *cn);
+static void decode_path_info(struct construct *cn, char *path_info);
+static int init_read_post_data(char *buf, char *data, struct construct *cn, int old_rv);
 #endif
 #ifdef CONFIG_HTTP_HAS_AUTHORIZATION
-static int auth_check(struct connstruct *cn);
+static int auth_check(struct construct *cn);
 #endif
 
 #if AXDEBUG
@@ -82,7 +82,7 @@ static int auth_check(struct connstruct *cn);
 #endif /* AXDEBUG */
 
 /* Returns 1 if elems should continue being read, 0 otherwise */
-static int procheadelem(struct connstruct *cn, char *buf) 
+static int procheadelem(struct construct *cn, char *buf) 
 {
     char *delim, *value;
 
@@ -169,7 +169,7 @@ static int procheadelem(struct connstruct *cn, char *buf)
 }
 
 #if defined(CONFIG_HTTP_DIRECTORIES)
-static void procdirlisting(struct connstruct *cn)
+static void procdirlisting(struct construct *cn)
 {
     char buf[MAXREQUESTLENGTH];
     char actualfile[1024];
@@ -211,7 +211,7 @@ static void procdirlisting(struct connstruct *cn)
     cn->state = STATE_DOING_DIR;
 }
 
-void procdodir(struct connstruct *cn) 
+void procdodir(struct construct *cn) 
 {
 #ifndef WIN32
     struct dirent *dp;
@@ -299,7 +299,7 @@ static void urlencode(const uint8_t *s, char *t)
 
 #endif
 
-void procreadhead(struct connstruct *cn) 
+void procreadhead(struct construct *cn) 
 {
     char buf[MAXREQUESTLENGTH*4], *tp, *next;
     int rv;
@@ -360,7 +360,7 @@ void procreadhead(struct connstruct *cn)
 /* In this function we assume that the file has been checked for
  * maliciousness (".."s, etc) and has been decoded
  */
-void procsendhead(struct connstruct *cn) 
+void procsendhead(struct construct *cn) 
 {
     char buf[MAXREQUESTLENGTH];
     struct stat stbuf;
@@ -494,7 +494,7 @@ void procsendhead(struct connstruct *cn)
     }
 }
 
-void procreadfile(struct connstruct *cn) 
+void procreadfile(struct construct *cn) 
 {
     int rv = read(cn->filedesc, cn->databuf, BLOCKSIZE);
 
@@ -518,7 +518,7 @@ void procreadfile(struct connstruct *cn)
     cn->state = STATE_WANT_TO_SEND_FILE;
 }
 
-void procsendfile(struct connstruct *cn) 
+void procsendfile(struct construct *cn) 
 {
     int rv = special_write(cn, cn->databuf, cn->numbytes);
 
@@ -543,7 +543,7 @@ void procsendfile(struct connstruct *cn)
 /* Should this be a bit more dynamic? It would mean more calls to malloc etc */
 #define CGI_ARG_SIZE        17
 
-static void proccgi(struct connstruct *cn) 
+static void proccgi(struct construct *cn) 
 {
     int tpipe[2], spipe[2];
     char *myargs[2];
@@ -710,7 +710,7 @@ static void proccgi(struct connstruct *cn)
 #endif
 }
 
-static char * cgi_filetype_match(struct connstruct *cn, const char *fn)
+static char * cgi_filetype_match(struct construct *cn, const char *fn)
 {
     struct cgiextstruct *tp = cgiexts;
 
@@ -742,7 +742,7 @@ static char * cgi_filetype_match(struct connstruct *cn, const char *fn)
     return NULL;
 }
 
-static void decode_path_info(struct connstruct *cn, char *path_info)
+static void decode_path_info(struct construct *cn, char *path_info)
 {
     char *cgi_delim;
 
@@ -780,7 +780,7 @@ static void decode_path_info(struct connstruct *cn, char *path_info)
 }
 
 static int init_read_post_data(char *buf, char *data, 
-                                struct connstruct *cn, int old_rv)
+                                struct construct *cn, int old_rv)
 {
    char *next = data;
    int rv = old_rv;
@@ -837,7 +837,7 @@ static int init_read_post_data(char *buf, char *data,
    return 0;
 }
 
-void read_post_data(struct connstruct *cn)
+void read_post_data(struct construct *cn)
 {
     char buf[MAXREQUESTLENGTH*4], *next;
     char *post_data;
@@ -930,7 +930,7 @@ static int hexit(char c)
         return 0;
 }
 
-static void buildactualfile(struct connstruct *cn)
+static void buildactualfile(struct construct *cn)
 {
     char *cp;
     snprintf(cn->actualfile, MAXREQUESTLENGTH, ".%s", cn->filereq);
@@ -1030,7 +1030,7 @@ static int sanitizehost(char *buf)
     return 1;
 }
 
-static FILE * exist_check(struct connstruct *cn, const char *check_file)
+static FILE * exist_check(struct construct *cn, const char *check_file)
 {
     char pathname[MAXREQUESTLENGTH];
     snprintf(pathname, MAXREQUESTLENGTH, "%s/%s", cn->dirname, check_file);
@@ -1038,7 +1038,7 @@ static FILE * exist_check(struct connstruct *cn, const char *check_file)
 }
 
 #ifdef CONFIG_HTTP_HAS_AUTHORIZATION
-static void send_authenticate(struct connstruct *cn, const char *realm)
+static void send_authenticate(struct construct *cn, const char *realm)
 {
     char buf[1024];
 
@@ -1076,7 +1076,7 @@ static int check_digest(char *salt, const char *msg_passwd)
     return memcmp(md5_result, real_passwd, MD5_SIZE);/* 0 = ok */
 }
 
-static int auth_check(struct connstruct *cn)
+static int auth_check(struct construct *cn)
 {
     char line[MAXREQUESTLENGTH];
     FILE *fp;
@@ -1126,7 +1126,7 @@ error:
 }
 #endif
 
-static int htaccess_check(struct connstruct *cn)
+static int htaccess_check(struct construct *cn)
 {
     char line[MAXREQUESTLENGTH];
     FILE *fp;
@@ -1152,7 +1152,7 @@ static int htaccess_check(struct connstruct *cn)
     return ret;
 }
 
-static void send_error(struct connstruct *cn, int err)
+static void send_error(struct construct *cn, int err)
 {
     char buf[MAXREQUESTLENGTH];
     char *title;
@@ -1206,7 +1206,7 @@ static const char *getmimetype(const char *name)
         return "application/octet-stream";
 }
 
-static int special_write(struct connstruct *cn, 
+static int special_write(struct construct *cn, 
                                         const char *buf, size_t count)
 {
     if (cn->is_ssl)
@@ -1218,7 +1218,7 @@ static int special_write(struct connstruct *cn,
         return SOCKET_WRITE(cn->networkdesc, buf, count);
 }
 
-static int special_read(struct connstruct *cn, void *buf, size_t count)
+static int special_read(struct construct *cn, void *buf, size_t count)
 {
     int res;
 

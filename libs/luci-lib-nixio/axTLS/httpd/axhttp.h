@@ -56,9 +56,9 @@ enum
     TYPE_POST
 };
 
-struct connstruct 
+struct construct 
 {
-    struct connstruct *next;
+    struct construct *next;
     int state;
     int reqtype;
     int networkdesc;
@@ -123,8 +123,8 @@ struct cgiextstruct
 
 /* global prototypes */
 extern struct serverstruct *servers;
-extern struct connstruct *usedconns;
-extern struct connstruct *freeconns;
+extern struct construct *usedconns;
+extern struct construct *freeconns;
 extern const char * const server_version;
 
 #if defined(CONFIG_HTTP_HAS_CGI)
@@ -132,16 +132,16 @@ extern struct cgiextstruct *cgiexts;
 #endif
 
 /* conn.c prototypes */
-void removeconnection(struct connstruct *cn);
+void removeconnection(struct construct *cn);
 
 /* proc.c prototypes */
-void procdodir(struct connstruct *cn);
-void procreadhead(struct connstruct *cn);
-void procsendhead(struct connstruct *cn);
-void procreadfile(struct connstruct *cn);
-void procsendfile(struct connstruct *cn);
+void procdodir(struct construct *cn);
+void procreadhead(struct construct *cn);
+void procsendhead(struct construct *cn);
+void procreadfile(struct construct *cn);
+void procsendfile(struct construct *cn);
 #if defined(CONFIG_HTTP_HAS_CGI)
-void read_post_data(struct connstruct *cn);
+void read_post_data(struct construct *cn);
 #endif
 
 /* misc.c prototypes */

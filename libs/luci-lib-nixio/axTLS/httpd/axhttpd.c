@@ -38,8 +38,8 @@
 #include "axhttp.h"
 
 struct serverstruct *servers;
-struct connstruct *usedconns;
-struct connstruct *freeconns;
+struct construct *usedconns;
+struct construct *freeconns;
 const char * const server_version = "axhttpd/"AXTLS_VERSION;
 
 static void addtoservers(int sd);
@@ -65,7 +65,7 @@ static void reaper(int sigtype)
 static void sigint_cleanup(int sig)
 {
     struct serverstruct *sp;
-    struct connstruct *tp;
+    struct construct *tp;
 
     while (servers != NULL) 
     {
@@ -114,7 +114,7 @@ static void die(int sigtype)
 int main(int argc, char *argv[]) 
 {
     fd_set rfds, wfds;
-    struct connstruct *tp, *to;
+    struct construct *tp, *to;
     struct serverstruct *sp;
     int rnum, wnum, active;
     int i;
@@ -143,7 +143,7 @@ int main(int argc, char *argv[])
     for (i = 0; i < INITIAL_CONNECTION_SLOTS; i++) 
     {
         tp = freeconns;
-        freeconns = (struct connstruct *)calloc(1, sizeof(struct connstruct));
+        freeconns = (struct construct *)calloc(1, sizeof(struct construct));
         freeconns->next = tp;
     }
 
@@ -492,11 +492,11 @@ int isdir(const char *tpbuf)
 
 static void addconnection(int sd, char *ip, int is_ssl) 
 {
-    struct connstruct *tp;
+    struct construct *tp;
 
-    /* Get ourselves a connstruct */
+    /* Get ourselves a construct */
     if (freeconns == NULL) 
-        tp = (struct connstruct *)calloc(1, sizeof(struct connstruct));
+        tp = (struct construct *)calloc(1, sizeof(struct construct));
     else 
     {
         tp = freeconns;
@@ -527,9 +527,9 @@ static void addconnection(int sd, char *ip, int is_ssl)
 #endif
 }
 
-void removeconnection(struct connstruct *cn) 
+void removeconnection(struct construct *cn) 
 {
-    struct connstruct *tp;
+    struct construct *tp;
     int shouldret = 0;
 
     tp = usedconns;
