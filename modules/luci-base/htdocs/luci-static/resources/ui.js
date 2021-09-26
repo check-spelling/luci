@@ -3449,7 +3449,7 @@ var UI = baseclass.extend(/** @lends LuCI.ui.prototype */ {
 	 * subsequently wrapped into a `<span class="nowrap">` element.
 	 *
 	 * The resulting `<span>` element tuples are joined by the given separators
-	 * to form the final markup which is appened to the given parent DOM node.
+	 * to form the final markup which is append to the given parent DOM node.
 	 *
 	 * @param {Node} node
 	 * The parent DOM node to append the markup to. Any previous child elements

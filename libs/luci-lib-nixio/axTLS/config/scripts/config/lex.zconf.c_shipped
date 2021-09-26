@@ -2645,7 +2645,7 @@ YY_FATAL_ERROR( "flex scanner jammed" );
 		if ( YY_CURRENT_BUFFER_LVALUE->yy_buffer_status == YY_BUFFER_NEW )
 			{
 			/* We're scanning a new file or input source.  It's
-			 * possible that this happened because the user
+			 * possible that this happend because the user
 			 * just pointed zconfin at a new source and called
 			 * zconflex().  If so, then we have to assure
 			 * consistency between YY_CURRENT_BUFFER and our

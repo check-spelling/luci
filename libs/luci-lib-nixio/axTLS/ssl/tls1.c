@@ -290,7 +290,7 @@ EXP_FUNC int STDCALL ssl_read(SSL *ssl, uint8_t **in_data)
         {
             send_alert(ssl, ret);
 #ifndef CONFIG_SSL_SKELETON_MODE
-            /* something nasty happened, so get rid of this session */
+            /* something nasty happend, so get rid of this session */
             kill_ssl_session(ssl->ssl_ctx->ssl_sessions, ssl);
 #endif
         }
