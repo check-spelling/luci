@@ -238,7 +238,7 @@ tiu.description	= translate("A URL to be displayed in the error page that users 
 		.. translate("The value of this option only matters if the experimental trust mechanism has been activated.")
 		.. [[</strong>]]
 tiu.optional	= true
-tiu.rmepty	= true
+tiu.rmempty	= true
 function tiu.parse(self, section, novld)
 	CTRL.value_parse(self, section, novld)
 end
