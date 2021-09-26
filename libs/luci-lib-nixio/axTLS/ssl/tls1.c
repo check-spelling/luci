@@ -582,7 +582,7 @@ error:
 }
 
 /** 
- * Increment the read sequence number (as a 64 bit endian indepenent #)
+ * Increment the read sequence number (as a 64 bit endian independent #)
  */     
 static void increment_read_sequence(SSL *ssl)
 {
@@ -596,7 +596,7 @@ static void increment_read_sequence(SSL *ssl)
 }
             
 /**
- * Increment the read sequence number (as a 64 bit endian indepenent #)
+ * Increment the read sequence number (as a 64 bit endian independent #)
  */      
 static void increment_write_sequence(SSL *ssl)
 {        
