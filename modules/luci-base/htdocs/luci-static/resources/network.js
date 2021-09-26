@@ -3407,7 +3407,7 @@ WifiDevice = baseclass.extend(/** @lends LuCI.network.WifiDevice.prototype */ {
 
 	/**
 	 * A wireless scan result object describes a neighbouring wireless
-	 * network found in the vincinity.
+	 * network found in the vicinity.
 	 *
 	 * @typedef {Object<string, number|string|LuCI.network.WifiEncryption>} WifiScanResult
 	 * @memberof LuCI.network
@@ -3445,7 +3445,7 @@ WifiDevice = baseclass.extend(/** @lends LuCI.network.WifiDevice.prototype */ {
 	 *
 	 * @returns {Promise<Array<LuCI.network.WifiScanResult>>}
 	 * Returns a promise resolving to an array of scan result objects
-	 * describing the networks found in the vincinity.
+	 * describing the networks found in the vicinity.
 	 */
 	getScanList: function() {
 		return callIwinfoScan(this.sid);
