@@ -2499,7 +2499,7 @@ Protocol = baseclass.extend(/** @lends LuCI.network.Protocol.prototype */ {
 	 * Checks whether this protocol is "floating".
 	 *
 	 * A "floating" protocol is a protocol which spawns its own interfaces
-	 * on demand, like a virtual one but which relies on an existinf lower
+	 * on demand, like a virtual one but which relies on an existing lower
 	 * level interface to initiate the connection.
 	 *
 	 * An example for such a protocol is "pppoe".
