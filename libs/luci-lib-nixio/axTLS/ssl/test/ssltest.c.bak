@@ -452,7 +452,7 @@ static int BIGINT_test(BI_CTX *ctx)
     bi_set_mod(ctx, bi_str_import(ctx, mod), 0);
     bi_res = bi_mod_power(ctx, bi_data, bi_exp);
 
-    bi_data = bi_res;   /* resuse again - see if we get the original */
+    bi_data = bi_res;   /* reuse again - see if we get the original */
 
     bi_exp = bi_str_import(ctx, expnt);
     bi_res = bi_mod_power(ctx, bi_data, bi_exp);
