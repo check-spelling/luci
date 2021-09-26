@@ -292,7 +292,7 @@ module "nixio"
 --- Get the current working directory.
 -- @class function
 -- @name nixio.getcwd
--- @return workign directory
+-- @return working directory
 
 --- Get the current environment table or a specific environment variable.
 -- @class function
