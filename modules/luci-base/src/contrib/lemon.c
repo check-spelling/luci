@@ -887,7 +887,7 @@ does not work properly.",sp->name);
 /* Return a pointer to a state which is described by the configuration
 ** list which has been built from calls to Configlist_add.
 */
-PRIVATE void buildshifts(struct lemon *, struct state *); /* Forwd ref */
+PRIVATE void buildshifts(struct lemon *, struct state *); /* Forward ref */
 PRIVATE struct state *getstate(struct lemon *lemp)
 {
   struct config *cfp, *bp;
