@@ -223,7 +223,7 @@ msgid "Datasets definition file"
 msgstr "Datasets definition file"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/cpufreq.js:22
-msgid "Detailled CPU frequency monitoring enabled"
+msgid "Detailed CPU frequency monitoring enabled"
 msgstr ""
 
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/dhcpleases.json:2
