@@ -76,7 +76,7 @@ return network.registerProtocol('openfortivpn', {
 
 		o = s.taboption("advanced", form.Value, 'local_ip', _("Local IP address"));
 		o.placeholder = '192.168.0.5'
-		o.dataype = 'ipaddr'
+		o.datatype = 'ipaddr'
 		o.optional = true;
 
 	}
