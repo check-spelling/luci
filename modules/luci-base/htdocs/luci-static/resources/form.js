@@ -2923,7 +2923,7 @@ var CBITableSection = CBITypedSection.extend(/** @lends LuCI.form.TableSection.p
  *
  * Another important difference is that the table cells show a readonly text
  * preview of the corresponding option elements by default, unless the child
- * option element is explicitely made writable by setting the `editable`
+ * option element is explicitly made writable by setting the `editable`
  * property to `true`.
  *
  * Additionally, the grid section honours a `modalonly` property of child
