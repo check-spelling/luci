@@ -5365,7 +5365,7 @@ Protocol = baseclass.extend(/** @lends LuCI.network.Protocol.prototype */ {
 	},
 
 	/**
-	 * Get the associared Linux network device of this network.
+	 * Get the associated Linux network device of this network.
 	 *
 	 * @returns {null|string}
 	 * Returns the name of the associated network device or `null` if
@@ -7538,7 +7538,7 @@ WifiNetwork = baseclass.extend(/** @lends LuCI.network.WifiNetwork.prototype */ 
 	 *
 	 * @returns {LuCI.network.Device}
 	 * Returns a `Network.Device` instance representing the Linux network
-	 * device associted with this wireless network.
+	 * device associated with this wireless network.
 	 */
 	getDevice: function() {
 		return Network.prototype.instantiateDevice(this.getIfname());
