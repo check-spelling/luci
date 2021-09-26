@@ -941,7 +941,7 @@ int x509write_copy_subject_from_issuer(x509_raw *crt,
  *       generalTime    GeneralizedTime }
  */
 /* TODO: No handle GeneralizedTime! */
-int x509write_add_validity(x509_raw *chain, unsigned char *befor,
+int x509write_add_validity(x509_raw *chain, unsigned char *before,
         unsigned char *after)
 {
     int ret;
@@ -949,7 +949,7 @@ int x509write_add_validity(x509_raw *chain, unsigned char *befor,
     x509_node *node = &chain->validity;
 
     /* notBefore */
-    if ((ret = asn1_add_date_utc(befor, node)) != 0)
+    if ((ret = asn1_add_date_utc(before, node)) != 0)
         return ret;
 
     /* notAfter */
