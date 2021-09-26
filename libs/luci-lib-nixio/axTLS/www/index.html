@@ -4491,7 +4491,7 @@ var saveUsingSafari = false;
 var startSaveArea = '<div id="' + 'storeArea">'; // Split up into two so that indexOf() of this source doesn't find it
 var endSaveArea = '</d' + 'iv>';
 
-// If there are unsaved changes, force the user to confirm before exitting
+// If there are unsaved changes, force the user to confirm before exiting
 function confirmExit()
 {
 	hadConfirmExit = true;
@@ -4499,7 +4499,7 @@ function confirmExit()
 		return config.messages.confirmExit;
 }
 
-// Give the user a chance to save changes before exitting
+// Give the user a chance to save changes before exiting
 function checkUnsavedChanges()
 {
 	if(store && store.isDirty && store.isDirty() && window.hadConfirmExit === false)
