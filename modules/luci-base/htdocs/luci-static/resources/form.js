@@ -343,7 +343,7 @@ var CBIAbstractElement = baseclass.extend(/** @lends LuCI.form.AbstractElement.p
  * @classdesc
  *
  * The `Map` class represents one complete form. A form usually maps one UCI
- * configuraton file and is divided into multiple sections containing multiple
+ * configuration file and is divided into multiple sections containing multiple
  * fields each.
  *
  * It serves as main entry point into the `LuCI.form` for typical view code.
