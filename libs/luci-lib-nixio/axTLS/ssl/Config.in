@@ -251,7 +251,7 @@ config CONFIG_SSL_EXPIRY_TIME
         The default is 1 day.
 
 config CONFIG_X509_MAX_CA_CERTS
-    int "Maximum number of certificate authorites"
+    int "Maximum number of certificate authorities"
     default 4
     depends on !CONFIG_SSL_SERVER_ONLY && !CONFIG_SSL_SKELETON_MODE
     help
