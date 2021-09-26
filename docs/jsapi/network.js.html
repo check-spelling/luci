@@ -3980,9 +3980,9 @@ function networkSort(a, b) {
 }
 
 function deviceSort(a, b) {
-	var typeWeigth = { wifi: 2, alias: 3 },
-        weightA = typeWeigth[a.getType()] || 1,
-        weightB = typeWeigth[b.getType()] || 1;
+	var typeWeight = { wifi: 2, alias: 3 },
+        weightA = typeWeight[a.getType()] || 1,
+        weightB = typeWeight[b.getType()] || 1;
 
     if (weightA != weightB)
     	return weightA - weightB;
