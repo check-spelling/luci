@@ -99,7 +99,7 @@ module "nixio"
 --- Open a file.
 -- @class function
 -- @name nixio.open
--- @usage Although this function also supports the traditional fopen() 
+-- @usage Although this function also supports the tradditional fopen() 
 -- file flags it does not create a file stream but uses the open() syscall.
 -- @param path	Filesystem path to open
 -- @param flags	Flag string or number (see open_flags).
