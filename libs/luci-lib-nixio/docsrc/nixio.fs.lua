@@ -24,7 +24,7 @@ module "nixio.fs"
 -- @param	path Path
 -- @return	dirname
 
---- Return the cannonicalized absolute pathname.
+--- Return the canonicalized absolute pathname.
 -- @class function
 -- @name nixio.fs.realpath
 -- @param	path Path
