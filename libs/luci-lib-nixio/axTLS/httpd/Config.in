@@ -68,7 +68,7 @@ config CONFIG_HTTP_CGI_EXTENSIONS
     default ".lua,.lp"
     depends on CONFIG_HTTP_HAS_CGI
     help
-        Tell axhhtpd what file extension(s) are used for CGI.
+        Tell axhttpd what file extension(s) are used for CGI.
 
         This is a comma separated list - e.g. ".php,.pl" etc
 
