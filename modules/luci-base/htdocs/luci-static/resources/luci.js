@@ -1357,7 +1357,7 @@
 		 * appended to the given `node`.
 		 *
 		 * When `children` is any other non-`null` value, it will be
-		 * converted to a string and appened to the `innerHTML` property
+		 * converted to a string and appended to the `innerHTML` property
 		 * of the given `node`.
 		 *
 		 * @returns {Node|null}
@@ -1424,7 +1424,7 @@
 		 * appended to the given `node`.
 		 *
 		 * When `children` is any other non-`null` value, it will be
-		 * converted to a string and appened to the `innerHTML` property
+		 * converted to a string and appended to the `innerHTML` property
 		 * of the given `node`.
 		 *
 		 * @returns {Node|null}
