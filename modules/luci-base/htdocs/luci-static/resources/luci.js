@@ -1338,7 +1338,7 @@
 		 * The `Node` argument to append the children to.
 		 *
 		 * @param {*} [children]
-		 * The childrens to append to the given node.
+		 * The children to append to the given node.
 		 *
 		 * When `children` is an array, then each item of the array
 		 * will be either appended as child element or text node,
@@ -1405,7 +1405,7 @@
 		 * The `Node` argument to replace the children of.
 		 *
 		 * @param {*} [children]
-		 * The childrens to replace into the given node.
+		 * The children to replace into the given node.
 		 *
 		 * When `children` is an array, then each item of the array
 		 * will be either appended as child element or text node,

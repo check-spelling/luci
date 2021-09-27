@@ -500,7 +500,7 @@ static void build_conf(struct menu *menu)
 				}
 
 				if (single_menu_mode && menu->data)
-					goto conf_childs;
+					goto conf_children;
 				return;
 			default:
 				if (prompt) {
@@ -512,7 +512,7 @@ static void build_conf(struct menu *menu)
 			}
 		} else
 			doint = 0;
-		goto conf_childs;
+		goto conf_children;
 	}
 
 	cmake();
@@ -565,7 +565,7 @@ static void build_conf(struct menu *menu)
 		if (menu == current_menu) {
 			cprint_tag(":%p", menu);
 			cprint_name("---%*c%s", indent + 1, ' ', menu_get_prompt(menu));
-			goto conf_childs;
+			goto conf_children;
 		}
 		child_count++;
 		val = sym_get_tristate_value(sym);
@@ -602,7 +602,7 @@ static void build_conf(struct menu *menu)
 				cprint_name("%*c%s%s", tmp, ' ', menu_get_prompt(menu),
 					(sym_has_value(sym) || !sym_is_changable(sym)) ?
 					"" : " (NEW)");
-				goto conf_childs;
+				goto conf_children;
 			}
 		}
 		cprint_name("%*c%s%s", indent + 1, ' ', menu_get_prompt(menu),
@@ -614,7 +614,7 @@ static void build_conf(struct menu *menu)
 		}
 	}
 
-conf_childs:
+conf_children:
 	indent += doint;
 	for (child = menu->list; child; child = child->next)
 		build_conf(child);

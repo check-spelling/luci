@@ -28,14 +28,14 @@ function progressbar(query, value, max, byte)
 	}
 }
 
-function renderBox(title, active, childs) {
-	childs = childs || [];
-	childs.unshift(L.itemlist(E('span'), [].slice.call(arguments, 3)));
+function renderBox(title, active, children) {
+	children = children || [];
+	children.unshift(L.itemlist(E('span'), [].slice.call(arguments, 3)));
 
 	return E('div', { class: 'ifacebox' }, [
 		E('div', { class: 'ifacebox-head center ' + (active ? 'active' : '') },
 			E('strong', title)),
-		E('div', { class: 'ifacebox-body left' }, childs)
+		E('div', { class: 'ifacebox-body left' }, children)
 	]);
 }
 
