@@ -123,7 +123,7 @@ module "nixio"
 --- Duplicate a file descriptor.
 -- @class function
 -- @name nixio.dup
--- @usage This funcation calls dup2() if <em>newfd</em> is set, otherwise dup().
+-- @usage This function calls dup2() if <em>newfd</em> is set, otherwise dup().
 -- @param oldfd	Old descriptor [File Object, Socket Object (POSIX only)]
 -- @param newfd New descriptor to serve as copy (optional)
 -- @return	File Object of new descriptor
