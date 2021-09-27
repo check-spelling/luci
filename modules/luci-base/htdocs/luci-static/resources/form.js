@@ -217,7 +217,7 @@ var CBIAbstractElement = baseclass.extend(/** @lends LuCI.form.AbstractElement.p
 	 * The `parse()` function recursively walks the form element tree and
 	 * triggers input value reading and validation for each encountered element.
 	 *
-	 * Elements which are hidden due to unsatisified dependencies are skipped.
+	 * Elements which are hidden due to unsatisfied dependencies are skipped.
 	 *
 	 * @returns {Promise<void>}
 	 * Returns a promise resolving once this element's value and the values of
@@ -553,7 +553,7 @@ var CBIMap = CBIAbstractElement.extend(/** @lends LuCI.form.Map.prototype */ {
 	 * The `parse()` function recursively walks the form element tree and
 	 * triggers input value reading and validation for each child element.
 	 *
-	 * Elements which are hidden due to unsatisified dependencies are skipped.
+	 * Elements which are hidden due to unsatisfied dependencies are skipped.
 	 *
 	 * @returns {Promise<void>}
 	 * Returns a promise resolving once the entire form completed parsing all
@@ -916,7 +916,7 @@ var CBIAbstractSection = CBIAbstractElement.extend(/** @lends LuCI.form.Abstract
 	 * triggers input value reading and validation for each encountered child
 	 * option element.
 	 *
-	 * Options which are hidden due to unsatisified dependencies are skipped.
+	 * Options which are hidden due to unsatisfied dependencies are skipped.
 	 *
 	 * @returns {Promise<void>}
 	 * Returns a promise resolving once the values of all child elements have
@@ -1245,9 +1245,9 @@ var CBIAbstractSection = CBIAbstractElement.extend(/** @lends LuCI.form.Abstract
 		for (var i = 0, sid = sids[0]; (sid = sids[i]) != null; i++) {
 			for (var j = 0, o = this.children[0]; (o = this.children[j]) != null; j++) {
 				var isActive = o.isActive(sid),
-				    isSatisified = o.checkDepends(sid);
+				    isSatisfied = o.checkDepends(sid);
 
-				if (isActive != isSatisified) {
+				if (isActive != isSatisfied) {
 					o.setActive(sid, !isActive);
 					isActive = !isActive;
 					changed = true;
@@ -1605,7 +1605,7 @@ var CBIAbstractValue = CBIAbstractElement.extend(/** @lends LuCI.form.AbstractVa
 	 *
 	 * @param {string|Object<string, string|RegExp>} optionname_or_depends
 	 * The name of the option to depend on or an object describing multiple
-	 * dependencies which must be satified (a logical "and" expression).
+	 * dependencies which must be satisfied (a logical "and" expression).
 	 *
 	 * @param {string} optionvalue|RegExp
 	 * When invoked with a plain option name as first argument, this parameter
@@ -1690,7 +1690,7 @@ var CBIAbstractValue = CBIAbstractElement.extend(/** @lends LuCI.form.AbstractVa
 
 		var config_name = this.uciconfig || this.section.uciconfig || this.map.config,
 		    cfgvalue = L.toArray(this.cfgvalue(section_id))[0],
-		    default_defval = null, satisified_defval = null;
+		    default_defval = null, satisfied_defval = null;
 
 		for (var value in this.defaults) {
 			if (!this.defaults[value] || this.defaults[value].length == 0) {
@@ -1698,19 +1698,19 @@ var CBIAbstractValue = CBIAbstractElement.extend(/** @lends LuCI.form.AbstractVa
 				continue;
 			}
 			else if (this.map.isDependencySatisfied(this.defaults[value], config_name, section_id)) {
-				satisified_defval = value;
+				satisfied_defval = value;
 				break;
 			}
 		}
 
-		if (satisified_defval == null)
-			satisified_defval = default_defval;
+		if (satisfied_defval == null)
+			satisfied_defval = default_defval;
 
 		var node = this.map.findElement('id', this.cbid(section_id));
-		if (node && node.getAttribute('data-changed') != 'true' && satisified_defval != null && cfgvalue == null)
-			dom.callClassMethod(node, 'setValue', satisified_defval);
+		if (node && node.getAttribute('data-changed') != 'true' && satisfied_defval != null && cfgvalue == null)
+			dom.callClassMethod(node, 'setValue', satisfied_defval);
 
-		this.default = satisified_defval;
+		this.default = satisfied_defval;
 	},
 
 	/**
