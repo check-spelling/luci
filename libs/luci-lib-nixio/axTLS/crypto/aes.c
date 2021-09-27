@@ -427,7 +427,7 @@ static void AES_decrypt(const AES_CTX *ctx, uint32_t *data)
             /* Perform MixColumn iff not last round */
             if (curr_rnd<(rounds-1))
             {
-                /* The MDS cofefficients (0x09, 0x0B, 0x0D, 0x0E)
+                /* The MDS coefficients (0x09, 0x0B, 0x0D, 0x0E)
                    are quite large compared to encryption; this 
                    operation slows decryption down noticeably. */
                 xt0 = AES_xtime(a0^a1);

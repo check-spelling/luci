@@ -30,7 +30,7 @@ help
 	$(LUCI_TITLE)
 	.
 	!!!   Package "radicale-py2" or "radicale-py3" needs to be   !!!
-	!!! installed sepearatly. There is no buildin dependency set !!!
+	!!! installed separately. There is no builtin dependency set !!!
 	.
 	Version: $(PKG_VERSION)-$(PKG_RELEASE)
 	$(PKG_MAINTAINER)

@@ -333,7 +333,7 @@ Get the names of all installed init scripts
 
 @class function
 @name init.names
-@return	Table containing the names of all inistalled init scripts
+@return	Table containing the names of all installed init scripts
 ]]
 
 ---[[

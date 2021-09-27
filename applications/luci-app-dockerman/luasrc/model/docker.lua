@@ -10,7 +10,7 @@ local uci = (require "luci.model.uci").cursor()
 local _docker = {}
 _docker.options = {}
 
---pull image and return iamge id
+--pull image and return image id
 local update_image = function(self, image_name)
 	local json_stringify = luci.jsonc and luci.jsonc.stringify
 	_docker:append_status("Images: " .. "pulling" .. " " .. image_name .. "...\n")

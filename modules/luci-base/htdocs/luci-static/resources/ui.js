@@ -26,7 +26,7 @@ var modalDiv = null,
  * events.
  *
  * UI widget instances are usually not supposed to be created by view code
- * directly, instead they're implicitely created by `LuCI.form` when
+ * directly, instead they're implicitly created by `LuCI.form` when
  * instantiating CBI forms.
  *
  * This class is automatically instantiated as part of `LuCI.ui`. To use it
@@ -134,7 +134,7 @@ var UIElement = baseclass.extend(/** @lends LuCI.ui.AbstractElement.prototype */
 	 * @memberof LuCI.ui.AbstractElement
 	 * @returns {boolean}
 	 * Returns `true` if the input value has been altered by the user or
-	 * `false` if it is unchaged. Note that if the user modifies the initial
+	 * `false` if it is unchanged. Note that if the user modifies the initial
 	 * value and changes it back to the original state, it is still reported
 	 * as changed.
 	 */
@@ -302,7 +302,7 @@ var UIElement = baseclass.extend(/** @lends LuCI.ui.AbstractElement.prototype */
  * The `Textfield` class implements a standard single line text input field.
  *
  * UI widget instances are usually not supposed to be created by view code
- * directly, instead they're implicitely created by `LuCI.form` when
+ * directly, instead they're implicitly created by `LuCI.form` when
  * instantiating CBI forms.
  *
  * This class is automatically instantiated as part of `LuCI.ui`. To use it
@@ -426,7 +426,7 @@ var UITextfield = UIElement.extend(/** @lends LuCI.ui.Textfield.prototype */ {
  * The `Textarea` class implements a multiline text area input field.
  *
  * UI widget instances are usually not supposed to be created by view code
- * directly, instead they're implicitely created by `LuCI.form` when
+ * directly, instead they're implicitly created by `LuCI.form` when
  * instantiating CBI forms.
  *
  * This class is automatically instantiated as part of `LuCI.ui`. To use it
@@ -542,7 +542,7 @@ var UITextarea = UIElement.extend(/** @lends LuCI.ui.Textarea.prototype */ {
  * The `Checkbox` class implements a simple checkbox input field.
  *
  * UI widget instances are usually not supposed to be created by view code
- * directly, instead they're implicitely created by `LuCI.form` when
+ * directly, instead they're implicitly created by `LuCI.form` when
  * instantiating CBI forms.
  *
  * This class is automatically instantiated as part of `LuCI.ui`. To use it
@@ -681,7 +681,7 @@ var UICheckbox = UIElement.extend(/** @lends LuCI.ui.Checkbox.prototype */ {
  * values are enabled or not.
  *
  * UI widget instances are usually not supposed to be created by view code
- * directly, instead they're implicitely created by `LuCI.form` when
+ * directly, instead they're implicitly created by `LuCI.form` when
  * instantiating CBI forms.
  *
  * This class is automatically instantiated as part of `LuCI.ui`. To use it
@@ -885,11 +885,11 @@ var UISelect = UIElement.extend(/** @lends LuCI.ui.Select.prototype */ {
  *
  * @classdesc
  *
- * The `Dropdown` class implements a rich, stylable dropdown menu which
+ * The `Dropdown` class implements a rich, styleable dropdown menu which
  * supports non-text choice labels.
  *
  * UI widget instances are usually not supposed to be created by view code
- * directly, instead they're implicitely created by `LuCI.form` when
+ * directly, instead they're implicitly created by `LuCI.form` when
  * instantiating CBI forms.
  *
  * This class is automatically instantiated as part of `LuCI.ui`. To use it
@@ -1944,13 +1944,13 @@ var UIDropdown = UIElement.extend(/** @lends LuCI.ui.Dropdown.prototype */ {
  *
  * @classdesc
  *
- * The `Combobox` class implements a rich, stylable dropdown menu which allows
+ * The `Combobox` class implements a rich, styleable dropdown menu which allows
  * to enter custom values. Historically, comboboxes used to be a dedicated
  * widget type in LuCI but nowadays they are direct aliases of dropdown widgets
  * with a set of enforced default properties for easier instantiation.
  *
  * UI widget instances are usually not supposed to be created by view code
- * directly, instead they're implicitely created by `LuCI.form` when
+ * directly, instead they're implicitly created by `LuCI.form` when
  * instantiating CBI forms.
  *
  * This class is automatically instantiated as part of `LuCI.ui`. To use it
@@ -2017,7 +2017,7 @@ var UICombobox = UIDropdown.extend(/** @lends LuCI.ui.Combobox.prototype */ {
  * into a dropdown to chose from a set of different action choices.
  *
  * UI widget instances are usually not supposed to be created by view code
- * directly, instead they're implicitely created by `LuCI.form` when
+ * directly, instead they're implicitly created by `LuCI.form` when
  * instantiating CBI forms.
  *
  * This class is automatically instantiated as part of `LuCI.ui`. To use it
@@ -2040,7 +2040,7 @@ var UIComboButton = UIDropdown.extend(/** @lends LuCI.ui.ComboButton.prototype *
 	/**
 	 * ComboButtons support the same properties as
 	 * [Dropdown.InitOptions]{@link LuCI.ui.Dropdown.InitOptions} but enforce
-	 * specific values for some properties and add aditional button specific
+	 * specific values for some properties and add additional button specific
 	 * properties.
 	 *
 	 * @typedef {LuCI.ui.Dropdown.InitOptions} InitOptions
@@ -2134,7 +2134,7 @@ var UIComboButton = UIDropdown.extend(/** @lends LuCI.ui.ComboButton.prototype *
  * from a set of predefined choices.
  *
  * UI widget instances are usually not supposed to be created by view code
- * directly, instead they're implicitely created by `LuCI.form` when
+ * directly, instead they're implicitly created by `LuCI.form` when
  * instantiating CBI forms.
  *
  * This class is automatically instantiated as part of `LuCI.ui`. To use it
@@ -2157,7 +2157,7 @@ var UIComboButton = UIDropdown.extend(/** @lends LuCI.ui.ComboButton.prototype *
  */
 var UIDynamicList = UIElement.extend(/** @lends LuCI.ui.DynamicList.prototype */ {
 	/**
-	 * In case choices are passed to the dynamic list contructor, the widget
+	 * In case choices are passed to the dynamic list constructor, the widget
 	 * supports the same properties as [Dropdown.InitOptions]{@link LuCI.ui.Dropdown.InitOptions}
 	 * but enforces specific values for some dropdown properties.
 	 *
@@ -2489,7 +2489,7 @@ var UIDynamicList = UIElement.extend(/** @lends LuCI.ui.DynamicList.prototype */
  * which allows to store form data without exposing it to the user.
  *
  * UI widget instances are usually not supposed to be created by view code
- * directly, instead they're implicitely created by `LuCI.form` when
+ * directly, instead they're implicitly created by `LuCI.form` when
  * instantiating CBI forms.
  *
  * This class is automatically instantiated as part of `LuCI.ui`. To use it
@@ -2555,7 +2555,7 @@ var UIHiddenfield = UIElement.extend(/** @lends LuCI.ui.Hiddenfield.prototype */
  * browse, select and delete files beneath a predefined remote directory.
  *
  * UI widget instances are usually not supposed to be created by view code
- * directly, instead they're implicitely created by `LuCI.form` when
+ * directly, instead they're implicitly created by `LuCI.form` when
  * instantiating CBI forms.
  *
  * This class is automatically instantiated as part of `LuCI.ui`. To use it
@@ -3052,7 +3052,7 @@ var UIMenu = baseclass.singleton(/** @lends LuCI.ui.menu.prototype */ {
 	 * @property {string} name - The internal name of the node, as used in the URL
 	 * @property {number} order - The sort index of the menu node
 	 * @property {string} [title] - The title of the menu node, `null` if the node should be hidden
-	 * @property {satisified} boolean - Boolean indicating whether the menu enries dependencies are satisfied
+	 * @property {satisfied} boolean - Boolean indicating whether the menu entries dependencies are satisfied
 	 * @property {readonly} [boolean] - Boolean indicating whether the menu entries underlying ACLs are readonly
 	 * @property {LuCI.ui.menu.MenuNode[]} [children] - Array of child menu nodes.
 	 */
@@ -3170,7 +3170,7 @@ var UI = baseclass.extend(/** @lends LuCI.ui.prototype */ {
 	 * be opened. Invoking showModal() while a modal dialog is already open will
 	 * replace the open dialog with a new one having the specified contents.
 	 *
-	 * Additional CSS class names may be passed to influence the appearence of
+	 * Additional CSS class names may be passed to influence the appearance of
 	 * the dialog. Valid values for the classes depend on the underlying theme.
 	 *
 	 * @see LuCI.dom.content
@@ -3281,11 +3281,11 @@ var UI = baseclass.extend(/** @lends LuCI.ui.prototype */ {
 	 * Add a notification banner at the top of the current view.
 	 *
 	 * A notification banner is an alert message usually displayed at the
-	 * top of the current view, spanning the entire availibe width.
+	 * top of the current view, spanning the entire available width.
 	 * Notification banners will stay in place until dismissed by the user.
 	 * Multiple banners may be shown at the same time.
 	 *
-	 * Additional CSS class names may be passed to influence the appearence of
+	 * Additional CSS class names may be passed to influence the appearance of
 	 * the banner. Valid values for the classes depend on the underlying theme.
 	 *
 	 * @see LuCI.dom.content
@@ -3449,7 +3449,7 @@ var UI = baseclass.extend(/** @lends LuCI.ui.prototype */ {
 	 * subsequently wrapped into a `<span class="nowrap">` element.
 	 *
 	 * The resulting `<span>` element tuples are joined by the given separators
-	 * to form the final markup which is appened to the given parent DOM node.
+	 * to form the final markup which is appended to the given parent DOM node.
 	 *
 	 * @param {Node} node
 	 * The parent DOM node to append the markup to. Any previous child elements
@@ -3776,7 +3776,7 @@ var UI = baseclass.extend(/** @lends LuCI.ui.prototype */ {
 	 * @param {string} path
 	 * The remote file path to upload the local file to.
 	 *
-	 * @param {Node} [progessStatusNode]
+	 * @param {Node} [progressStatusNode]
 	 * An optional DOM text node whose content text is set to the progress
 	 * percentage value during file upload.
 	 *

@@ -114,10 +114,10 @@ msgstr ""
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:55
 msgid ""
-"Get certificate from the Letsencrypt staging server (use for testing; the "
+"Get certificate from the Let's Encrypt staging server (use for testing; the "
 "certificate won't be valid)."
 msgstr ""
-"Get certificate from the Letsencrypt staging server (use for testing; the "
+"Get certificate from the Let's Encrypt staging server (use for testing; the "
 "certificate won't be valid)."
 
 #: applications/luci-app-acme/root/usr/share/rpcd/acl.d/luci-app-acme.json:3
@@ -184,8 +184,8 @@ msgstr ""
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:18
 msgid ""
-"This configures ACME (Letsencrypt) automatic certificate installation. "
-"Simply fill out this to have the router configured with Letsencrypt-issued "
+"This configures ACME (Let's Encrypt) automatic certificate installation. "
+"Simply fill out this to have the router configured with Let's Encrypt-issued "
 "certificates for the web interface. Note that the domain names in the "
 "certificate must already be configured to point at the router's public IP "
 "address. Once configured, issuing certificates can take a while. Check the "

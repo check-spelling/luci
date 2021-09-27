@@ -33,8 +33,8 @@ s1.addremove = false
 s1.anonymous = true
 
 if (valman == "0") and (dhcplk == "odhcpd") and (lstrig ~= "/usr/lib/unbound/odhcpd.sh") then
-    m1.message = translatef( "Note: local DNS is configured to look at odhpcd, "
-    .. "but odhpcd UCI lease trigger is incorrectly set: ")
+    m1.message = translatef( "Note: local DNS is configured to look at odhcpd, "
+    .. "but odhcpd UCI lease trigger is incorrectly set: ")
     .. "dhcp.odhcpd.leasetrigger='" .. lstrig .. "'"
 end
 
@@ -81,11 +81,11 @@ if (valman == "0") then
 
     prt = s1:taboption("basic", Value, "listen_port",
         translate("Listening Port"),
-        translate("Choose Unbounds listening port"))
+        translate("Choose Unbound's listening port"))
     prt.datatype = "port"
     prt.placeholder = "53"
 
-    --Avanced Tab
+    --Advanced Tab
     rlh = s1:taboption("advanced", Flag, "rebind_localhost",
         translate("Filter Localhost Rebind"),
         translate("Protect against upstream response of 127.0.0.0/8"))

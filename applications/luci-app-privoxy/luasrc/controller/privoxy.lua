@@ -7,7 +7,7 @@ local NX   = require "nixio"
 local NXFS = require "nixio.fs"
 local DISP = require "luci.dispatcher"
 local HTTP = require "luci.http"
-local I18N = require "luci.i18n" 	-- not globally avalible here
+local I18N = require "luci.i18n" 	-- not globally available here
 local IPKG = require "luci.model.ipkg"
 local UCI  = require "luci.model.uci"
 local UTIL = require "luci.util"
@@ -155,7 +155,7 @@ function value_parse(self, section, novld)
 	local rm_opt = ( self.rmempty or self.optional )
 	local eq_cfg					-- flag: equal cfgvalue
 
-	-- If favlue and cvalue are both tables and have the same content
+	-- If fvalue and cvalue are both tables and have the same content
 	-- make them identical
 	if type(fvalue) == "table" and type(cvalue) == "table" then
 		eq_cfg = (#fvalue == #cvalue)

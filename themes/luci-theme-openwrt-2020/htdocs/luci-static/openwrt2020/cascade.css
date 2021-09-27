@@ -55,7 +55,7 @@ body {
 }
 
 /*
- * scaffholding
+ * scaffolding
  */
 
 #menubar {
@@ -930,7 +930,7 @@ button[disabled], button.disabled, .btn[disabled], .btn.disabled {
 .cbi-checkbox input[type="checkbox"] {
 	position: absolute;
 	z-index: 10;
-	-webkit-appearence: button;
+	-webkit-appearance: button;
 	height: 1.3em;
 	width: 1.3em;
 	opacity: 0;

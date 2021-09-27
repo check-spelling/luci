@@ -923,7 +923,7 @@
 		 * @hideconstructor
 		 * @classdesc
 		 *
-		 * The `Request.poll` class provides some convience wrappers around
+		 * The `Request.poll` class provides some convenience wrappers around
 		 * {@link LuCI.poll} mainly to simplify registering repeating HTTP
 		 * request calls as polling functions.
 		 */
@@ -1053,7 +1053,7 @@
 
 		/**
 		 * Add a new operation to the polling loop. If the polling loop is not
-		 * already started at this point, it will be implicitely started.
+		 * already started at this point, it will be implicitly started.
 		 *
 		 * @instance
 		 * @memberof LuCI.poll
@@ -1096,8 +1096,8 @@
 		},
 
 		/**
-		 * Remove an operation from the polling loop. If no further operatons
-		 * are registered, the polling loop is implicitely stopped.
+		 * Remove an operation from the polling loop. If no further operations
+		 * are registered, the polling loop is implicitly stopped.
 		 *
 		 * @instance
 		 * @memberof LuCI.poll
@@ -1159,7 +1159,7 @@
 		 * @instance
 		 * @memberof LuCI.poll
 		 * @returns {boolean}
-		 * Returns `true` if polling has been stopped or `false` if it din't
+		 * Returns `true` if polling has been stopped or `false` if it didn't
 		 * run to begin with.
 		 */
 		stop: function() {
@@ -1338,7 +1338,7 @@
 		 * The `Node` argument to append the children to.
 		 *
 		 * @param {*} [children]
-		 * The childrens to append to the given node.
+		 * The children to append to the given node.
 		 *
 		 * When `children` is an array, then each item of the array
 		 * will be either appended as child element or text node,
@@ -1357,7 +1357,7 @@
 		 * appended to the given `node`.
 		 *
 		 * When `children` is any other non-`null` value, it will be
-		 * converted to a string and appened to the `innerHTML` property
+		 * converted to a string and appended to the `innerHTML` property
 		 * of the given `node`.
 		 *
 		 * @returns {Node|null}
@@ -1405,7 +1405,7 @@
 		 * The `Node` argument to replace the children of.
 		 *
 		 * @param {*} [children]
-		 * The childrens to replace into the given node.
+		 * The children to replace into the given node.
 		 *
 		 * When `children` is an array, then each item of the array
 		 * will be either appended as child element or text node,
@@ -1424,7 +1424,7 @@
 		 * appended to the given `node`.
 		 *
 		 * When `children` is any other non-`null` value, it will be
-		 * converted to a string and appened to the `innerHTML` property
+		 * converted to a string and appended to the `innerHTML` property
 		 * of the given `node`.
 		 *
 		 * @returns {Node|null}
@@ -1478,7 +1478,7 @@
 		 *
 		 * When `val` is of any other type, it will be added as attribute
 		 * to the given `node` as-is, with the underlying `setAttribute()`
-		 * call implicitely turning it into a string.
+		 * call implicitly turning it into a string.
 		 */
 		attr: function(node, key, val) {
 			if (!this.elem(node))
@@ -2332,7 +2332,7 @@
 
 		/**
 		 * A wrapper around {@link LuCI#raise raise()} which also renders
-		 * the error either as modal overlay when `ui.js` is already loaed
+		 * the error either as modal overlay when `ui.js` is already loaded
 		 * or directly into the view body.
 		 *
 		 * @instance

@@ -352,10 +352,10 @@ msgstr "UAM- ja MAC-todennus"
 
 #~ msgid ""
 #~ "Swap the meaning of \"input octets\" and \"output octets\" as it related "
-#~ "to RADIUS attribtues"
+#~ "to RADIUS attributes"
 #~ msgstr ""
 #~ "Swap the meaning of \"input octets\" and \"output octets\" as it related "
-#~ "to RADIUS attribtues"
+#~ "to RADIUS attributes"
 
 #~ msgid "Allow WPA guests"
 #~ msgstr "Allow WPA guests"

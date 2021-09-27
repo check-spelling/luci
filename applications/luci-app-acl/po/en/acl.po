@@ -143,5 +143,5 @@ msgstr "readonly"
 #~ msgid "Use plain password"
 #~ msgstr "Use plain password"
 
-#~ msgid "Acess level"
-#~ msgstr "Acess level"
+#~ msgid "Access level"
+#~ msgstr "Access level"

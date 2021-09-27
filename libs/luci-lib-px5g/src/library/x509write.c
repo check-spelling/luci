@@ -357,7 +357,7 @@ static int asn1_append_nodes(x509_node *node, int tag, int anz, ...)
 }
 
 /*
- * write a ASN.1 conform object identifiere include a "tag"
+ * write a ASN.1 conform object identifier include a "tag"
  */
 static int asn1_add_oid(x509_node *node, unsigned char *oid, size_t len,
         int tag, int tag_val, unsigned char *value, size_t val_len)
@@ -914,7 +914,7 @@ int x509write_copy_subject(x509_raw *crt, x509_cert *from_crt)
 }
 
 /*
- * Copy subject line form antoher cert into issuer
+ * Copy subject line form another cert into issuer
  */
 int x509write_copy_issuer_form_subject(x509_raw *crt,
         x509_cert *from_crt)
@@ -941,7 +941,7 @@ int x509write_copy_subject_from_issuer(x509_raw *crt,
  *       generalTime    GeneralizedTime }
  */
 /* TODO: No handle GeneralizedTime! */
-int x509write_add_validity(x509_raw *chain, unsigned char *befor,
+int x509write_add_validity(x509_raw *chain, unsigned char *before,
         unsigned char *after)
 {
     int ret;
@@ -949,7 +949,7 @@ int x509write_add_validity(x509_raw *chain, unsigned char *befor,
     x509_node *node = &chain->validity;
 
     /* notBefore */
-    if ((ret = asn1_add_date_utc(befor, node)) != 0)
+    if ((ret = asn1_add_date_utc(before, node)) != 0)
         return ret;
 
     /* notAfter */

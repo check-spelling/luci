@@ -69,7 +69,7 @@ applicable everywhere (see syntax).
   default values are visible, only the first defined one is active.
   Default values are not limited to the menu entry, where they are
   defined, this means the default can be defined somewhere else or be
-  overriden by an earlier definition.
+  overridden by an earlier definition.
   The default value is only assigned to the config symbol if no other
   value was set by the user (via the input prompt above). If an input
   prompt is visible the default value is presented to the user and can
@@ -142,7 +142,7 @@ Menu structure
 --------------
 
 The position of a menu entry in the tree is determined in two ways. First
-it can be specified explicitely:
+it can be specified explicitly:
 
 menu "Network device support"
 	depends NET
@@ -160,7 +160,7 @@ dependency list of the config option NETDEVICES.
 The other way to generate the menu structure is done by analyzing the
 dependencies. If a menu entry somehow depends on the previous entry, it
 can be made a submenu of it. First the the previous (parent) symbol must
-be part of the dependency list and then one of these two condititions
+be part of the dependency list and then one of these two conditions
 must be true:
 - the child entry must become invisible, if the parent is set to 'n'
 - the child entry must only be visible, if the parent is visible

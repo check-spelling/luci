@@ -92,7 +92,7 @@ function smartdnsRenderStatus(res) {
 		var dnsmasqServer = uci.get_first('dhcp', 'dnsmasq', 'server') || "";
 
 		if (dnsmasqServer.indexOf(matchLine) < 0) {
-			renderHTML += "<br /><span style=\"color:red;font-weight:bold\">" + _("Dnsmasq Forwared To Smartdns Failure") + "</span>";
+			renderHTML += "<br /><span style=\"color:red;font-weight:bold\">" + _("Dnsmasq Forwarded To Smartdns Failure") + "</span>";
 		}
 	} else if (redirectMode === "redirect") {
 		var redirectRules = (ipt || '').split(/\n/).filter(function (rule) {
@@ -156,7 +156,7 @@ return L.view.extend({
 		s.tab("seconddns", _("Second Server Settings"));
 		s.tab("custom", _("Custom Settings"));
 
-		// Eanble;
+		// Enable;
 		o = s.taboption("settings", form.Flag, "enabled", _("Enable"), _("Enable or disable smartdns server"));
 		o.default = o.disabled;
 		o.rempty = false;
@@ -233,7 +233,7 @@ return L.view.extend({
 			_("Maximum TTL for all domain result."));
 		o.rempty = true;
 
-		// Eanble;
+		// Enable;
 		o = s.taboption("seconddns", form.Flag, "seconddns_enabled", _("Enable"),
 			_("Enable or disable second DNS server."));
 		o.default = o.disabled;
@@ -426,7 +426,7 @@ return L.view.extend({
 		o.rempty = true
 		o.modalonly = true;
 
-		// Doman addresss;
+		// Domain address;
 		s = m.section(form.TypedSection, "smartdns", _("Advanced Settings"), _("Advanced Settings"));
 		s.anonymous = true;
 
@@ -457,7 +457,7 @@ return L.view.extend({
 			return fs.write('/etc/smartdns/blacklist-ip.conf', formvalue.trim().replace(/\r\n/g, '\n') + '\n');
 		};
 
-		// Doman addresss;
+		// Domain address;
 		s = m.section(form.TypedSection, "smartdns", _("Technical Support"),
 			_("If you like this software, please buy me a cup of coffee."));
 		s.anonymous = true;

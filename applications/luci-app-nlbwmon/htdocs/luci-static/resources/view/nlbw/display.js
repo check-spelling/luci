@@ -948,7 +948,7 @@ return view.extend({
 				]),
 
 				E('div', { 'class': 'cbi-section', 'data-tab': 'export', 'data-tab-title': _('Export') }, [
-					E('div', { 'class': 'cbi-section-node cbi-sction-node-tabbed' }, [
+					E('div', { 'class': 'cbi-section-node cbi-section-node-tabbed' }, [
 						E('div', { 'class': 'cbi-value' }, [
 							E('label', { 'class': 'cbi-value-title' }, _('Grouped by MAC (CSV)')),
 							E('div', { 'class': 'cbi-value-field' }, [

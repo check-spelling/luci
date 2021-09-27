@@ -80,7 +80,7 @@ You see these action functions simple have to be added to a dispatching entry.
 As you might or might not know: CGI specification requires you to send a Content-Type header before you can send your content. You will find several shortcuts (like the one used above) as well as redirecting functions in the module *luci.http*
 
 ## Views
-If you only want to show the user a text or some interesting familiy photos it may be enough to use a HTML-template. These templates can also include some Lua code but be aware that writing whole office suites by only using these templates might be called "dirty" by other developers.
+If you only want to show the user a text or some interesting family photos it may be enough to use a HTML-template. These templates can also include some Lua code but be aware that writing whole office suites by only using these templates might be called "dirty" by other developers.
 
 Now let's create a little template *_lucidir_/view/myapp-mymodule/helloworld.htm* with the content:
 
@@ -104,7 +104,7 @@ It is always good to include header and footer at the beginning and end of a tem
 ## <a name=cbimodels></a> CBI models
 The CBI is one of the uber coolest features of LuCI. It creates a formular based user interface and saves its contents to a specific UCI config file. You only have to describe the structure of the configuration file in a CBI model file and Luci does the rest of the work. This includes generating, parsing and validating a XHTML form and reading and writing the UCI file.
 
-So let's be serious at least for this paragraph and create a real pratical example *_lucidir_/model/cbi/myapp-mymodule/netifaces.lua* with the following contents:
+So let's be serious at least for this paragraph and create a real practical example *_lucidir_/model/cbi/myapp-mymodule/netifaces.lua* with the following contents:
 
 	
 	m = Map("network", "Network") -- We want to edit the uci config file /etc/config/network

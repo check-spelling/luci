@@ -718,7 +718,7 @@ end
 -- Coroutine safe xpcall and pcall versions
 --
 -- Encapsulates the protected calls with a coroutine based loop, so errors can
--- be dealed without the usual Lua 5.x pcall/xpcall issues with coroutines
+-- be handled without the usual Lua 5.x pcall/xpcall issues with coroutines
 -- yielding inside the call to pcall or xpcall.
 --
 -- Authors: Roberto Ierusalimschy and Andre Carregal

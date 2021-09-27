@@ -217,7 +217,7 @@ var CBIAbstractElement = baseclass.extend(/** @lends LuCI.form.AbstractElement.p
 	 * The `parse()` function recursively walks the form element tree and
 	 * triggers input value reading and validation for each encountered element.
 	 *
-	 * Elements which are hidden due to unsatisified dependencies are skipped.
+	 * Elements which are hidden due to unsatisfied dependencies are skipped.
 	 *
 	 * @returns {Promise<void>}
 	 * Returns a promise resolving once this element's value and the values of
@@ -343,7 +343,7 @@ var CBIAbstractElement = baseclass.extend(/** @lends LuCI.form.AbstractElement.p
  * @classdesc
  *
  * The `Map` class represents one complete form. A form usually maps one UCI
- * configuraton file and is divided into multiple sections containing multiple
+ * configuration file and is divided into multiple sections containing multiple
  * fields each.
  *
  * It serves as main entry point into the `LuCI.form` for typical view code.
@@ -359,7 +359,7 @@ var CBIAbstractElement = baseclass.extend(/** @lends LuCI.form.AbstractElement.p
  *
  * @param {string} [description]
  * The description text of the form which is usually rendered as text
- * paragraph below the form title and before the actual form conents.
+ * paragraph below the form title and before the actual form contents.
  * If omitted, the corresponding paragraph element will not be rendered.
  */
 var CBIMap = CBIAbstractElement.extend(/** @lends LuCI.form.Map.prototype */ {
@@ -497,11 +497,11 @@ var CBIMap = CBIAbstractElement.extend(/** @lends LuCI.form.Map.prototype */ {
 	 * @param {LuCI.form.AbstractSection} sectionclass
 	 * The section class to use for rendering the configuration section.
 	 * Note that this value must be the class itself, not a class instance
-	 * obtained from calling `new`. It must also be a class dervied from
+	 * obtained from calling `new`. It must also be a class derived from
 	 * `LuCI.form.AbstractSection`.
 	 *
 	 * @param {...string} classargs
-	 * Additional arguments which are passed as-is to the contructor of the
+	 * Additional arguments which are passed as-is to the constructor of the
 	 * given section class. Refer to the class specific constructor
 	 * documentation for details.
 	 *
@@ -553,7 +553,7 @@ var CBIMap = CBIAbstractElement.extend(/** @lends LuCI.form.Map.prototype */ {
 	 * The `parse()` function recursively walks the form element tree and
 	 * triggers input value reading and validation for each child element.
 	 *
-	 * Elements which are hidden due to unsatisified dependencies are skipped.
+	 * Elements which are hidden due to unsatisfied dependencies are skipped.
 	 *
 	 * @returns {Promise<void>}
 	 * Returns a promise resolving once the entire form completed parsing all
@@ -583,7 +583,7 @@ var CBIMap = CBIAbstractElement.extend(/** @lends LuCI.form.Map.prototype */ {
 	 *
 	 * @param {boolean} [silent=false]
 	 * If set to `true`, trigger an alert message to the user in case saving
-	 * the form data failes. Otherwise fail silently.
+	 * the form data fails. Otherwise fail silently.
 	 *
 	 * @returns {Promise<void>}
 	 * Returns a promise resolving once the entire save operation is complete.
@@ -792,7 +792,7 @@ var CBIMap = CBIAbstractElement.extend(/** @lends LuCI.form.Map.prototype */ {
  *
  * @param {string} [description]
  * The description text of the form which is usually rendered as text
- * paragraph below the form title and before the actual form conents.
+ * paragraph below the form title and before the actual form contents.
  * If omitted, the corresponding paragraph element will not be rendered.
  */
 var CBIJSONMap = CBIMap.extend(/** @lends LuCI.form.JSONMap.prototype */ {
@@ -916,7 +916,7 @@ var CBIAbstractSection = CBIAbstractElement.extend(/** @lends LuCI.form.Abstract
 	 * triggers input value reading and validation for each encountered child
 	 * option element.
 	 *
-	 * Options which are hidden due to unsatisified dependencies are skipped.
+	 * Options which are hidden due to unsatisfied dependencies are skipped.
 	 *
 	 * @returns {Promise<void>}
 	 * Returns a promise resolving once the values of all child elements have
@@ -962,7 +962,7 @@ var CBIAbstractSection = CBIAbstractElement.extend(/** @lends LuCI.form.Abstract
 	 * contents. If omitted, no description will be rendered.
 	 *
 	 * @throws {Error}
-	 * Throws an exeption if a tab with the same `name` already exists.
+	 * Throws an exception if a tab with the same `name` already exists.
 	 */
 	tab: function(name, title, description) {
 		if (this.tabs && this.tabs[name])
@@ -992,11 +992,11 @@ var CBIAbstractSection = CBIAbstractElement.extend(/** @lends LuCI.form.Abstract
 	 * @param {LuCI.form.AbstractValue} optionclass
 	 * The option class to use for rendering the configuration option. Note
 	 * that this value must be the class itself, not a class instance obtained
-	 * from calling `new`. It must also be a class dervied from
+	 * from calling `new`. It must also be a class derived from
 	 * [LuCI.form.AbstractSection]{@link LuCI.form.AbstractSection}.
 	 *
 	 * @param {...*} classargs
-	 * Additional arguments which are passed as-is to the contructor of the
+	 * Additional arguments which are passed as-is to the constructor of the
 	 * given option class. Refer to the class specific constructor
 	 * documentation for details.
 	 *
@@ -1025,11 +1025,11 @@ var CBIAbstractSection = CBIAbstractElement.extend(/** @lends LuCI.form.Abstract
 	 * @param {LuCI.form.AbstractValue} optionclass
 	 * The option class to use for rendering the configuration option. Note
 	 * that this value must be the class itself, not a class instance obtained
-	 * from calling `new`. It must also be a class dervied from
+	 * from calling `new`. It must also be a class derived from
 	 * [LuCI.form.AbstractSection]{@link LuCI.form.AbstractSection}.
 	 *
 	 * @param {...*} classargs
-	 * Additional arguments which are passed as-is to the contructor of the
+	 * Additional arguments which are passed as-is to the constructor of the
 	 * given option class. Refer to the class specific constructor
 	 * documentation for details.
 	 *
@@ -1245,9 +1245,9 @@ var CBIAbstractSection = CBIAbstractElement.extend(/** @lends LuCI.form.Abstract
 		for (var i = 0, sid = sids[0]; (sid = sids[i]) != null; i++) {
 			for (var j = 0, o = this.children[0]; (o = this.children[j]) != null; j++) {
 				var isActive = o.isActive(sid),
-				    isSatisified = o.checkDepends(sid);
+				    isSatisfied = o.checkDepends(sid);
 
-				if (isActive != isSatisified) {
+				if (isActive != isSatisfied) {
 					o.setActive(sid, !isActive);
 					isActive = !isActive;
 					changed = true;
@@ -1522,7 +1522,7 @@ var CBIAbstractValue = CBIAbstractElement.extend(/** @lends LuCI.form.AbstractVa
 	 */
 
 	/**
-	 * Add a dependency contraint to the option.
+	 * Add a dependency constraint to the option.
 	 *
 	 * Dependency constraints allow making the presence of option elements
 	 * dependant on the current values of certain other options within the
@@ -1605,7 +1605,7 @@ var CBIAbstractValue = CBIAbstractElement.extend(/** @lends LuCI.form.AbstractVa
 	 *
 	 * @param {string|Object<string, string|RegExp>} optionname_or_depends
 	 * The name of the option to depend on or an object describing multiple
-	 * dependencies which must be satified (a logical "and" expression).
+	 * dependencies which must be satisfied (a logical "and" expression).
 	 *
 	 * @param {string} optionvalue|RegExp
 	 * When invoked with a plain option name as first argument, this parameter
@@ -1690,7 +1690,7 @@ var CBIAbstractValue = CBIAbstractElement.extend(/** @lends LuCI.form.AbstractVa
 
 		var config_name = this.uciconfig || this.section.uciconfig || this.map.config,
 		    cfgvalue = L.toArray(this.cfgvalue(section_id))[0],
-		    default_defval = null, satisified_defval = null;
+		    default_defval = null, satisfied_defval = null;
 
 		for (var value in this.defaults) {
 			if (!this.defaults[value] || this.defaults[value].length == 0) {
@@ -1698,19 +1698,19 @@ var CBIAbstractValue = CBIAbstractElement.extend(/** @lends LuCI.form.AbstractVa
 				continue;
 			}
 			else if (this.map.isDependencySatisfied(this.defaults[value], config_name, section_id)) {
-				satisified_defval = value;
+				satisfied_defval = value;
 				break;
 			}
 		}
 
-		if (satisified_defval == null)
-			satisified_defval = default_defval;
+		if (satisfied_defval == null)
+			satisfied_defval = default_defval;
 
 		var node = this.map.findElement('id', this.cbid(section_id));
-		if (node && node.getAttribute('data-changed') != 'true' && satisified_defval != null && cfgvalue == null)
-			dom.callClassMethod(node, 'setValue', satisified_defval);
+		if (node && node.getAttribute('data-changed') != 'true' && satisfied_defval != null && cfgvalue == null)
+			dom.callClassMethod(node, 'setValue', satisfied_defval);
 
-		this.default = satisified_defval;
+		this.default = satisfied_defval;
 	},
 
 	/**
@@ -2832,7 +2832,7 @@ var CBITableSection = CBITypedSection.extend(/** @lends LuCI.form.TableSection.p
 	 * @returns {*|Promise<*>}
 	 * Return values of this function are ignored but if a promise is returned,
 	 * it is run to completion before the rendering is continued, allowing
-	 * custom logic to perform asynchroneous work before the modal dialog
+	 * custom logic to perform asynchronous work before the modal dialog
 	 * is shown.
 	 */
 	addModalOptions: function(modalSection, section_id, ev) {
@@ -2923,7 +2923,7 @@ var CBITableSection = CBITypedSection.extend(/** @lends LuCI.form.TableSection.p
  *
  * Another important difference is that the table cells show a readonly text
  * preview of the corresponding option elements by default, unless the child
- * option element is explicitely made writable by setting the `editable`
+ * option element is explicitly made writable by setting the `editable`
  * property to `true`.
  *
  * Additionally, the grid section honours a `modalonly` property of child
@@ -2972,7 +2972,7 @@ var CBIGridSection = CBITableSection.extend(/** @lends LuCI.form.GridSection.pro
 	 * contents. If omitted, no description will be rendered.
 	 *
 	 * @throws {Error}
-	 * Throws an exeption if a tab with the same `name` already exists.
+	 * Throws an exception if a tab with the same `name` already exists.
 	 */
 	tab: function(name, title, description) {
 		CBIAbstractSection.prototype.tab.call(this, name, title, description);

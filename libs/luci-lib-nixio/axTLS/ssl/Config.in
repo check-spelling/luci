@@ -230,7 +230,7 @@ config CONFIG_SSL_USE_PKCS12
         PKCS#12 certificates combine private keys and certificates together in
         one file.
 
-        PKCS#8 private keys are also suppported (as it is a subset of PKCS#12).
+        PKCS#8 private keys are also supported (as it is a subset of PKCS#12).
 
         The decryption of these certificates uses RC4-128 (and these
         certificates must be encrypted using this cipher). The actual
@@ -251,7 +251,7 @@ config CONFIG_SSL_EXPIRY_TIME
         The default is 1 day.
 
 config CONFIG_X509_MAX_CA_CERTS
-    int "Maximum number of certificate authorites"
+    int "Maximum number of certificate authorities"
     default 4
     depends on !CONFIG_SSL_SERVER_ONLY && !CONFIG_SSL_SKELETON_MODE
     help

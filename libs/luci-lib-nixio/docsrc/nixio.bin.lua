@@ -1,7 +1,7 @@
 --- Binary operations and conversion.
 module "nixio.bin"
 
---- Return a hexadecimal ASCII represantation of the content of a buffer. 
+--- Return a hexadecimal ASCII representation of the content of a buffer. 
 -- @class function
 -- @name hexlify
 -- @param buffer	Buffer

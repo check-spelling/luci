@@ -59,7 +59,7 @@ return baseclass.extend({
 
 				for(var ver in data[idx]) {
 					var classname = ver,
-						suppelements = '',
+						supplements = '',
 						visible = data[idx][ver].visible;
 
 					if('connected' === ver) {
@@ -92,7 +92,7 @@ return baseclass.extend({
 								E('p', { 'class': 'mt-2'}, [
 									E('span', {'class': ''}, [ data[idx][ver].title + '：' ]),
 									E('span', {'class': classname }, [ data[idx][ver].value ]),
-									suppelements
+									supplements
 								])
 							);
 						}
@@ -113,7 +113,7 @@ return baseclass.extend({
 								E('p', {'class': 'mt-2'}, [
 									E('span', {'class': ''}, [data[idx][ver].title + '：']),
 									E('span', {'class': classname}, [data[idx][ver].value]),
-									suppelements
+									supplements
 								])
 							);
 						}

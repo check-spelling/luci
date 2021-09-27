@@ -226,7 +226,7 @@ return baseclass.extend(/** @lends LuCI.rpc.prototype */ {
 	 *    be returned as default instead.
 	 *
 	 * @property {LuCI.rpc~filterFn} [filter]
-	 * Specfies an optional filter function which is invoked to transform the
+	 * Specifies an optional filter function which is invoked to transform the
 	 * received reply data before it is returned to the caller.
 	 *
 	 * @property {boolean} [reject=false]
@@ -454,7 +454,7 @@ return baseclass.extend(/** @lends LuCI.rpc.prototype */ {
 	 * Registers a new interceptor function.
 	 *
 	 * @param {LuCI.rpc~interceptorFn} interceptorFn
-	 * The inteceptor function to register.
+	 * The interceptor function to register.
 	 *
 	 * @returns {LuCI.rpc~interceptorFn}
 	 * Returns the given function value.
@@ -469,7 +469,7 @@ return baseclass.extend(/** @lends LuCI.rpc.prototype */ {
 	 * Removes a registered interceptor function.
 	 *
 	 * @param {LuCI.rpc~interceptorFn} interceptorFn
-	 * The inteceptor function to remove.
+	 * The interceptor function to remove.
 	 *
 	 * @returns {boolean}
 	 * Returns `true` if the given function has been removed or `false`

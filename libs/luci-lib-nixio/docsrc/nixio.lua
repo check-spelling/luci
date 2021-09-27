@@ -33,7 +33,7 @@ module "nixio"
 -- <li>prefix = Prefix (if available)</li>
 -- <li>flags = Table of interface flags (up, multicast, loopback, ...)</li>
 -- <li>data = Statistics (Linux, "packet"-family)</li>
--- <li>hatype = Hardware Type Identifier (Linix, "packet"-family)</li>
+-- <li>hatype = Hardware Type Identifier (Linux, "packet"-family)</li>
 -- <li>ifindex = Interface Index (Linux, "packet"-family)</li>
 -- </ul>
 
@@ -123,7 +123,7 @@ module "nixio"
 --- Duplicate a file descriptor.
 -- @class function
 -- @name nixio.dup
--- @usage This funcation calls dup2() if <em>newfd</em> is set, otherwise dup().
+-- @usage This function calls dup2() if <em>newfd</em> is set, otherwise dup().
 -- @param oldfd	Old descriptor [File Object, Socket Object (POSIX only)]
 -- @param newfd New descriptor to serve as copy (optional)
 -- @return	File Object of new descriptor
@@ -292,7 +292,7 @@ module "nixio"
 --- Get the current working directory.
 -- @class function
 -- @name nixio.getcwd
--- @return workign directory
+-- @return working directory
 
 --- Get the current environment table or a specific environment variable.
 -- @class function

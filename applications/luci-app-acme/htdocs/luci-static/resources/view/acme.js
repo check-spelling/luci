@@ -15,8 +15,8 @@ return view.extend({
 		var m, s, o;
 
 		m = new form.Map("acme", _("ACME certificates"),
-			_("This configures ACME (Letsencrypt) automatic certificate installation. " +
-				"Simply fill out this to have the router configured with Letsencrypt-issued " +
+			_("This configures ACME (Let's Encrypt) automatic certificate installation. " +
+				"Simply fill out this to have the router configured with Let's Encrypt-issued " +
 				"certificates for the web interface. " +
 				"Note that the domain names in the certificate must already be configured to " +
 				"point at the router's public IP address. " +
@@ -52,7 +52,7 @@ return view.extend({
 		o.rmempty = false;
 
 		o = s.taboption('general', form.Flag, "use_staging", _("Use staging server"),
-			_("Get certificate from the Letsencrypt staging server " +
+			_("Get certificate from the Let's Encrypt staging server " +
 				"(use for testing; the certificate won't be valid)."));
 		o.rmempty = false;
 		o.modalonly = true;

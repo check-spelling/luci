@@ -252,7 +252,7 @@ EXP_FUNC void STDCALL ssl_free(SSL *ssl);
  * @param ssl [in] An SSL object reference.
  * @param in_data [out] If the read was successful, a pointer to the read
  * buffer will be here. Do NOT ever free this memory as this buffer is used in
- * sucessive calls. If the call was unsuccessful, this value will be null.
+ * successive calls. If the call was unsuccessful, this value will be null.
  * @return The number of decrypted bytes:
  * - if > 0, then the handshaking is complete and we are returning the number 
  *   of decrypted bytes. 
@@ -266,7 +266,7 @@ EXP_FUNC int STDCALL ssl_read(SSL *ssl, uint8_t **in_data);
 /**
  * @brief Write to the SSL data stream. 
  * The socket must be in blocking mode.
- * @param ssl [in] An SSL obect reference.
+ * @param ssl [in] An SSL object reference.
  * @param out_data [in] The data to be written
  * @param out_len [in] The number of bytes to be written.
  * @return The number of bytes sent, or if < 0 if an error.
@@ -331,7 +331,7 @@ EXP_FUNC int STDCALL ssl_handshake_status(const SSL *ssl);
  * - SSL_BUILD_MODE The build mode. This will be one of the following:
  *   - SSL_BUILD_SERVER_ONLY            (basic server mode)
  *   - SSL_BUILD_ENABLE_VERIFICATION    (server can do client authentication)
- *   - SSL_BUILD_ENABLE_CLIENT          (client/server capabilties)
+ *   - SSL_BUILD_ENABLE_CLIENT          (client/server capabilities)
  *   - SSL_BUILD_FULL_MODE              (client/server with diagnostics)
  *   - SSL_BUILD_SKELETON_MODE          (skeleton mode)
  * - SSL_MAX_CERT_CFG_OFFSET The maximum number of certificates allowed.

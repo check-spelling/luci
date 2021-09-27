@@ -19,7 +19,7 @@ return baseclass.extend({
 
 	configSummary: function(section) {
 		return (section.ExtraItems == '1')
-			? _('Detailled CPU frequency monitoring enabled')
+			? _('Detailed CPU frequency monitoring enabled')
 			: _('Simple CPU frequency monitoring enabled');
 	}
 });

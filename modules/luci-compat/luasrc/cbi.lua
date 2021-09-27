@@ -840,7 +840,7 @@ function AbstractSection.tab(self, tab, title, desc)
 	self.tabs[tab] = {
 		title       = title,
 		description = desc,
-		childs      = { }
+		children      = { }
 	}
 end
 
@@ -869,7 +869,7 @@ function AbstractSection.taboption(self, tab, ...)
 	assert(tab and self.tabs and self.tabs[tab],
 		"Cannot assign option to not existing tab %q" % tostring(tab))
 
-	local l = self.tabs[tab].childs
+	local l = self.tabs[tab].children
 	local o = AbstractSection.option(self, ...)
 
 	if o then l[#l+1] = o end
@@ -884,8 +884,8 @@ function AbstractSection.render_tab(self, tab, ...)
 		"Cannot render not existing tab %q" % tostring(tab))
 
 	local k, node
-	for k, node in ipairs(self.tabs[tab].childs) do
-		node.last_child = (k == #self.tabs[tab].childs)
+	for k, node in ipairs(self.tabs[tab].children) do
+		node.last_child = (k == #self.tabs[tab].children)
 		node.index = k
 		node:render(...)
 	end
@@ -1311,7 +1311,7 @@ function AbstractValue.prepare(self)
 	self.cast = self.cast or "string"
 end
 
--- Add a dependencie to another section field
+-- Add a dependency to another section field
 function AbstractValue.depends(self, field, value)
 	local deps
 	if type(field) == "string" then
@@ -1405,7 +1405,7 @@ function AbstractValue.parse(self, section, novld)
 	local fvalue = self:formvalue(section)
 	local cvalue = self:cfgvalue(section)
 
-	-- If favlue and cvalue are both tables and have the same content
+	-- If fvalue and cvalue are both tables and have the same content
 	-- make them identical
 	if type(fvalue) == "table" and type(cvalue) == "table" then
 		local equal = #fvalue == #cvalue

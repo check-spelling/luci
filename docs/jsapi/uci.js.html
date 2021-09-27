@@ -3446,7 +3446,7 @@
  *
  * The `LuCI.uci` class utilizes {@link LuCI.rpc} to declare low level
  * remote UCI `ubus` procedures and implements a local caching and data
- * manipulation layer on top to allow for synchroneous operations on
+ * manipulation layer on top to allow for synchronous operations on
  * UCI configuration data.
  */
 return baseclass.extend(/** @lends LuCI.uci.prototype */ {
@@ -3773,7 +3773,7 @@ return baseclass.extend(/** @lends LuCI.uci.prototype */ {
 	 * anonymous (`true`) or named (`false`).
 	 *
 	 * @property {number} .index
-	 * The `.index` property specifes the sort order of the section.
+	 * The `.index` property specifies the sort order of the section.
 	 *
 	 * @property {string} .name
 	 * The `.name` property holds the name of the section object. It may be
@@ -4045,7 +4045,7 @@ return baseclass.extend(/** @lends LuCI.uci.prototype */ {
 	/**
 	 * Gets the value of the given option or the entire section object of
 	 * the first found section of the specified type or the first found
-	 * section of the entire configuration if no type is specfied.
+	 * section of the entire configuration if no type is specified.
 	 *
 	 * @param {string} config
 	 * The name of the configuration to read the value from.

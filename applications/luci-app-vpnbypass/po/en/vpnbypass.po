@@ -53,7 +53,7 @@ msgid "Not installed or not found"
 msgstr ""
 
 #: applications/luci-app-vpnbypass/htdocs/luci-static/resources/vpnbypass/widgets.js:68
-msgid "Quering"
+msgid "Querying"
 msgstr ""
 
 #: applications/luci-app-vpnbypass/htdocs/luci-static/resources/view/vpnbypass/overview.js:50

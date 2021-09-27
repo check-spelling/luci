@@ -57,7 +57,7 @@ msgid ""
 msgstr ""
 
 #: applications/luci-app-eoip/htdocs/luci-static/resources/view/eoip/eoip.js:33
-msgid "Indeficator id tunnel"
+msgid "ID tunnel identifier"
 msgstr ""
 
 #: applications/luci-app-eoip/htdocs/luci-static/resources/view/eoip/eoip.js:18

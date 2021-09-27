@@ -111,7 +111,7 @@ luci.ip.cidr IPv4 instance.
 @return A string representing the given IPv4 address.
 @usage `ipv4 = luci.ip.checkip4(luci.ip.new("127.0.0.1"))  -- "127.0.0.1"
 ipv4 = luci.ip.checkip4("127.0.0.1")               -- "127.0.0.1"
-ipv4 = luci.ip.checkip4("nonesense")               -- nothing
+ipv4 = luci.ip.checkip4("nonsense")                -- nothing
 ipv4 = luci.ip.checkip4(123)                       -- nothing
 ipv4 = luci.ip.checkip4(nil)                       -- nothing
 ipv4 = luci.ip.checkip4()                          -- nothing`
@@ -137,7 +137,7 @@ luci.ip.cidr IPv6 instance.
 @return A string representing the given IPv6 address.
 @usage `ipv6 = luci.ip.checkip6(luci.ip.new("0:0:0:0:0:0:0:1"))  -- "::1"
 ipv6 = luci.ip.checkip6("0:0:0:0:0:0:0:1")               -- "::1"
-ipv6 = luci.ip.checkip6("nonesense")                     -- nothing
+ipv6 = luci.ip.checkip6("nonsense")                      -- nothing
 ipv6 = luci.ip.checkip6(123)                             -- nothing
 ipv6 = luci.ip.checkip6(nil)                             -- nothing
 ipv6 = luci.ip.checkip6()                                -- nothing`
@@ -163,7 +163,7 @@ MAC address instance.
 @return A string representing the given MAC address.
 @usage `mac = luci.ip.checkmac(luci.ip.new("00-11-22-cc-dd-ee"))  -- "00:11:22:CC:DD:EE"
 mac = luci.ip.checkmac("00:11:22:cc:dd:ee")               -- "00:11:22:CC:DD:EE"
-mac = luci.ip.checkmac("nonesense")                       -- nothing
+mac = luci.ip.checkmac("nonsense")                        -- nothing
 mac = luci.ip.checkmac(123)                               -- nothing
 mac = luci.ip.checkmac(nil)                               -- nothing
 mac = luci.ip.checkmac()                                  -- nothing`
@@ -646,7 +646,7 @@ end`
 
 ---[[
 Checks whether this CIDR instance is lower than the given argument.
-The comparisation follows these rules:
+The comparison follows these rules:
 <ul><li>An IPv4 address is always lower than an IPv6 address and IPv6 addresses
 are considered lower than MAC addresses</li>
 <li>Prefix sizes are ignored</li></ul>
@@ -670,7 +670,7 @@ print(addr:lower(luci.ip.new("00:14:22:01:23:45"))) -- true`
 
 ---[[
 Checks whether this CIDR instance is higher than the given argument.
-The comparisation follows these rules:
+The comparison follows these rules:
 <ul><li>An IPv4 address is always lower than an IPv6 address and IPv6 addresses
 are considered lower than MAC addresses</li>
 <li>Prefix sizes are ignored</li></ul>

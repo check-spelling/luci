@@ -72,7 +72,7 @@ msgid "Check for local program to allow forward to localhost"
 msgstr ""
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:84
-msgid "Choose Unbounds listening port"
+msgid "Choose Unbound's listening port"
 msgstr ""
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:238
@@ -465,7 +465,7 @@ msgstr ""
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:36
 msgid ""
-"Note: local DNS is configured to look at odhpcd, but odhpcd UCI lease "
+"Note: local DNS is configured to look at odhcpd, but odhcpd UCI lease "
 "trigger is incorrectly set:"
 msgstr ""
 

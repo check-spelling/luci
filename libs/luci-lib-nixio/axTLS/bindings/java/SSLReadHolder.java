@@ -42,7 +42,7 @@ package axTLSj;
 public class SSLReadHolder
 {
     /**
-     * @brief Contruct a new read holder object.
+     * @brief Construct a new read holder object.
      */
     public SSLReadHolder()
     {

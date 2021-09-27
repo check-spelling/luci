@@ -605,5 +605,5 @@ msgstr "chroot"
 msgid "upsmon drops privileges to this user"
 msgstr "upsmon drops privileges to this user"
 
-#~ msgid "Maxium Start Delay"
-#~ msgstr "Maxium Start Delay"
+#~ msgid "Maximum Start Delay"
+#~ msgstr "Maximum Start Delay"

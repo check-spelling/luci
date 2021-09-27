@@ -163,7 +163,7 @@ function action_neigh(json)
 		local noise = 0
 		local mac = ""
 		local ip
-		local neihgt = {}
+		local neight = {}
 
 		if resolve == "1" then
 			hostname = nixio.getnameinfo(v.remoteIP, nil, 100)

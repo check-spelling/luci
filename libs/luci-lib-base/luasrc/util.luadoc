@@ -128,7 +128,7 @@ containing the resulting substrings.
 The optional max parameter specifies the number of bytes to process,
 regardless of the actual length of the given string. The optional last
 parameter, regex, specifies whether the separator sequence is
-nterpreted as regular expression.
+interpreted as regular expression.
 
 @class				function
 @name				split
@@ -348,7 +348,7 @@ Test whether the current system is operating in big endian mode.
 ]]
 
 ---[[
-Execute given commandline and gather stdout.
+Execute given command-line and gather stdout.
 
 @class				function
 @name				exec
@@ -373,7 +373,7 @@ Issue an ubus call.
 @param object		String containing the ubus object to call
 @param method		String containing the ubus method to call
 @param values		Table containing the values to pass
-@return				Table containin the ubus result
+@return				Table containing the ubus result
 ]]
 
 ---[[

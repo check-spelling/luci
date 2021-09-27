@@ -181,7 +181,7 @@ msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:139
 msgid ""
-"Configuration of the banIP package to block ip adresses/subnets via IPSet. "
+"Configuration of the banIP package to block ip addresses/subnets via IPSet. "
 "For further information <a href=\"https://github.com/openwrt/packages/blob/"
 "master/net/banip/files/README.md\" target=\"_blank\" rel=\"noreferrer "
 "noopener\" >check the online documentation</a>"
@@ -760,7 +760,7 @@ msgid "The day of the week (opt., values: 1-7 possibly sep. by , or -)"
 msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:47
-msgid "The hours portition (req., range: 0-23)"
+msgid "The hours portion (req., range: 0-23)"
 msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:52

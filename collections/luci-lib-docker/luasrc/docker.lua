@@ -251,15 +251,15 @@ local gen_header = function(options, http_method, api_group, api_action, name_or
 		end
 	end
 
-	-- when requst_body is function, we need to custom header using custom header
+	-- when request_body is function, we need to custom header using custom header
 	if request and request.body and type(request.body) == "function" then
 		if not header:match("Content-Length:") then
 			header = header .. "Transfer-Encoding: chunked\r\n"
 		end
 	elseif http_method == "POST" and request and request.body and type(request.body) == "table" then
-		local conetnt_json = json_stringify(request.body)
+		local content_json = json_stringify(request.body)
 		header = header .. "Content-Type: application/json\r\n"
-		header = header .. "Content-Length: " .. #conetnt_json .. "\r\n"
+		header = header .. "Content-Length: " .. #content_json .. "\r\n"
 	elseif request and request.body and type(request.body) == "string" then
 		header = header .. "Content-Length: " .. #request.body .. "\r\n"
 	end
@@ -412,7 +412,7 @@ gen_api(_docker, "GET", "exec", "inspect")
 gen_api(_docker, "GET", "containers", "get_archive")
 gen_api(_docker, "PUT", "containers", "put_archive")
 gen_api(_docker, "GET", "containers", "export")
--- TODO: attch
+-- TODO: attach
 
 gen_api(_docker, "GET", "images", "list")
 gen_api(_docker, "POST", "images", "create")

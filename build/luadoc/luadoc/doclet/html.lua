@@ -129,7 +129,7 @@ end
 -- Returns a link to a function or to a table
 -- @param fname name of the function or table to link to.
 -- @param doc documentation table
--- @param kind String specying the kinf of element to link ("functions" or "tables").
+-- @param kind String specifying the kinf of element to link ("functions" or "tables").
 
 function link_to (fname, doc, module_doc, file_doc, from, kind)
 	assert(fname)
