@@ -55,7 +55,7 @@ module "nixio.UnifiedIO"
 -- ahead. Do NOT mix calls to read(all) and the returned iterator. If you want
 -- to stop reading line-based and want to use the read(all) functions instead
 -- you can pass "true" to the iterator which will flush the buffer 
--- and return the bufferd data.
+-- and return the buffered data.
 -- @usage If the limit parameter is omitted, this function uses the nixio
 -- buffersize (8192B by default).
 -- @usage If the descriptor is non-blocking the iterator may fail with EAGAIN.
