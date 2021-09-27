@@ -30,7 +30,7 @@ return view.extend({
                 };
 
 		
-		id = s.option(form.Value, "idtun", _("ID tunnel"), _("Indeficator id tunnel"));
+		id = s.option(form.Value, "idtun", _("ID tunnel"), _("ID tunnel identifier"));
 		id.rmempty = false;
 		id.datatype = "and(min(1), integer)";
 		id.default = 1;
