@@ -426,7 +426,7 @@ return L.view.extend({
 		o.rempty = true
 		o.modalonly = true;
 
-		// Doman address;
+		// Domain address;
 		s = m.section(form.TypedSection, "smartdns", _("Advanced Settings"), _("Advanced Settings"));
 		s.anonymous = true;
 
@@ -457,7 +457,7 @@ return L.view.extend({
 			return fs.write('/etc/smartdns/blacklist-ip.conf', formvalue.trim().replace(/\r\n/g, '\n') + '\n');
 		};
 
-		// Doman address;
+		// Domain address;
 		s = m.section(form.TypedSection, "smartdns", _("Technical Support"),
 			_("If you like this software, please buy me a cup of coffee."));
 		s.anonymous = true;
