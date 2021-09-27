@@ -1311,7 +1311,7 @@ function AbstractValue.prepare(self)
 	self.cast = self.cast or "string"
 end
 
--- Add a dependencie to another section field
+-- Add a dependency to another section field
 function AbstractValue.depends(self, field, value)
 	local deps
 	if type(field) == "string" then
