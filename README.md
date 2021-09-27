@@ -21,7 +21,7 @@ To install all its package definitions, run:
 
 ## API Reference
 
-You can browse the generated API documentation directly on Github.
+You can browse the generated API documentation directly on GitHub.
 
  - [Server side Lua APIs](http://openwrt.github.io/luci/api/index.html)
  - [Client side JavaScript APIs](http://openwrt.github.io/luci/jsapi/index.html)

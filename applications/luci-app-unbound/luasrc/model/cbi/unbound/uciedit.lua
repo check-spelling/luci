@@ -14,7 +14,7 @@ s6 = m6:section(SimpleSection, "",
     translatef("Edit '" .. filename .. "' "
     .. "and recipes can be found in OpenWrt "
     .. "<a href=\"%s\" target=\"_blank\">Guides</a> "
-    .. "and <a href=\"%s\" target=\"_blank\">Github</a>.",
+    .. "and <a href=\"%s\" target=\"_blank\">GitHub</a>.",
     "https://openwrt.org/docs/guide-user/services/dns/unbound",
     "https://github.com/openwrt/packages/blob/master/net/unbound/files/README.md"))
 

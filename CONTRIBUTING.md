@@ -21,15 +21,15 @@ For general information on patch submission, follow the [OpenWrt patch submissio
 
 ## Advice on pull requests:
 
-Pull requests are the easiest way to contribute changes to git repos at Github. They are the preferred contribution method, as they offer a nice way for commenting and amending the proposed changes.
+Pull requests are the easiest way to contribute changes to git repos at GitHub. They are the preferred contribution method, as they offer a nice way for commenting and amending the proposed changes.
 
-* You need a local "fork" of the Github repo.
+* You need a local "fork" of the GitHub repo.
 * Use a "feature branch" for your changes. That separates the changes in the pull request from your other changes and makes it easy to edit/amend commits in the pull request. Workflow using `feature_x` as the example:
   - Update your local git fork to the tip (of the master, usually)
   - Create the feature branch with `git checkout -b feature_x`
   - Edit changes and commit them locally
-  - Push them to your Github fork by `git push -u origin feature_x`. That creates the `feature_x` branch at your Github fork and sets it as the remote of this branch
-  - When you now visit Github, you should see a proposal to create a pull request
+  - Push them to your GitHub fork by `git push -u origin feature_x`. That creates the `feature_x` branch at your GitHub fork and sets it as the remote of this branch
+  - When you now visit GitHub, you should see a proposal to create a pull request
 
 * If you later need to add new commits to the pull request, you can simply commit the changes to the local branch and then use `git push` to automatically update the pull request.
 
@@ -37,7 +37,7 @@ Pull requests are the easiest way to contribute changes to git repos at Github. 
   - Checkout the feature branch by `git checkout feature_x`
   - Edit changes and commit them locally. If you are just updating the commit message in the last commit, you can use `git commit --amend` to do that
   - If you added several new commits or made other changes that require cleaning up, you can use `git rebase -i HEAD~X` (X = number of commits to edit) to possibly squash some commits
-  - Push the changed commits to Github with `git push -f` to overwrite the original commits in the "feature_x" branch with the new ones. The pull request gets automatically updated
+  - Push the changed commits to GitHub with `git push -f` to overwrite the original commits in the "feature_x" branch with the new ones. The pull request gets automatically updated
 
 ## If you have commit access:
 
