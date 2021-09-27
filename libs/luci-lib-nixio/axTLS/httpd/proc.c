@@ -787,7 +787,7 @@ static int init_read_post_data(char *buf, char *data,
    char *post_data;
 
     /* Too much Post data to send. MAXPOSTDATASIZE should be 
-       configured (now it can be chaged in the header file) */
+       configured (now it can be changed in the header file) */
    if (cn->content_length > MAXPOSTDATASIZE) 
    {
        send_error(cn, 418);
