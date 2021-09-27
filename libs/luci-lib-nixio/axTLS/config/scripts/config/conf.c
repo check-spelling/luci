@@ -330,7 +330,7 @@ static int conf_choice(struct menu *menu)
 		printf("%*schoice", indent - 1, "");
 		if (cnt == 1) {
 			printf("[1]: 1\n");
-			goto conf_childs;
+			goto conf_children;
 		}
 		printf("[1-%d", cnt);
 		if (sym->help)
@@ -372,7 +372,7 @@ static int conf_choice(struct menu *menu)
 			break;
 		}
 
-	conf_childs:
+	conf_children:
 		for (child = menu->list; child; child = child->next) {
 			if (!child->sym || !menu_is_visible(child))
 				continue;
@@ -429,13 +429,13 @@ static void conf(struct menu *menu)
 	}
 
 	if (!sym)
-		goto conf_childs;
+		goto conf_children;
 
 	if (sym_is_choice(sym)) {
 		conf_choice(menu);
 		if (sym->curr.tri != mod)
 			return;
-		goto conf_childs;
+		goto conf_children;
 	}
 
 	switch (sym->type) {
@@ -449,7 +449,7 @@ static void conf(struct menu *menu)
 		break;
 	}
 
-conf_childs:
+conf_children:
 	if (sym)
 		indent += 2;
 	for (child = menu->list; child; child = child->next)
