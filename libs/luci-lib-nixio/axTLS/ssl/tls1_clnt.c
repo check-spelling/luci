@@ -159,7 +159,7 @@ int do_client_connect(SSL *ssl)
                 /* let the server know we are dying and why */
                 if (send_alert(ssl, ret))
                 {
-                    /* something nasty happend, so get rid of it */
+                    /* something nasty happened, so get rid of it */
                     kill_ssl_session(ssl->ssl_ctx->ssl_sessions, ssl);
                 }
             }
