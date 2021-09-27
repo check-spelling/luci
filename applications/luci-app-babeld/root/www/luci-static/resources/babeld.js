@@ -77,7 +77,7 @@ function renderTableRoutes(data, target_id) {
                              <div class="th" style="font-weight: 700;">Refmetric</div>\
                              <div class="th" style="font-weight: 700;">ID</div>\
                              <div class="th" style="font-weight: 700;">Seq. No.</div>\
-                             <div class="th" style="font-weight: 700;">Channes</div>\
+                             <div class="th" style="font-weight: 700;">Channels</div>\
                              <div class="th" style="font-weight: 700;">Age</div>\
                              <div class="th" style="font-weight: 700;">Via</div>\
                              <div class="th" style="font-weight: 700;">Nexthop</div>\
