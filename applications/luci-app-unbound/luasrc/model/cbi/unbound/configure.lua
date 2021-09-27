@@ -81,7 +81,7 @@ if (valman == "0") then
 
     prt = s1:taboption("basic", Value, "listen_port",
         translate("Listening Port"),
-        translate("Choose Unbounds listening port"))
+        translate("Choose Unbound's listening port"))
     prt.datatype = "port"
     prt.placeholder = "53"
 
